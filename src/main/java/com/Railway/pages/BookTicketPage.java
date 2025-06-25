@@ -1,4 +1,16 @@
-package com.example.pages;
+package com.Railway.pages;
 
-public class BookTicketPage {
+import com.Railway.constant.Constants;
+
+public class BookTicketPage extends BasePage{
+
+    @Override
+    protected String getPageName() {
+        return Constants.pageName.BOOK_TICKET_PAGE;
+    }
+
+    @Override
+    protected String getPageHeading() {
+        return Constants.pageHeading.BOOK_TICKET_PAGE;
+    }
 }

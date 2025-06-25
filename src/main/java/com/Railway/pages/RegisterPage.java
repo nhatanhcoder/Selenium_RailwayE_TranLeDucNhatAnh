@@ -1,10 +1,12 @@
-package com.example.pages;
+package com.Railway.pages;
 
-import com.example.driver.DriverManager;
+import com.Railway.constant.Constants;
+import com.Railway.driver.DriverManager;
+import com.Railway.utilities.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class RegisterPage {
+public class RegisterPage extends BasePage{
 
 
     private final By emailTextBox = By.xpath("//input[@id='email']");
@@ -17,6 +19,7 @@ public class RegisterPage {
     private final By validationPasswordMessage= By.xpath("//label[@for='password' and @class='validation-error']");
     private final By validationConfirmPasswordMessage= By.xpath("//label[@for='confirmPassword' and @class='validation-error']");
     private final By validationPidNumberMessage= By.xpath("//label[@for='pid' and @class='validation-error']");
+    private final By errorMessage= By.xpath("//p[@class='message error']");
 
     private WebElement getEmailTextBox(){
         return DriverManager.getDriver().findElement(emailTextBox);
@@ -59,6 +62,10 @@ public class RegisterPage {
     }
 
 
+    private WebElement getErrorMessage(){
+        return DriverManager.getDriver().findElement(errorMessage);
+    }
+
     public String getValidationEmailMessageText(){
         return getValidationEmailMessage().getText();
     }
@@ -75,6 +82,9 @@ public class RegisterPage {
         return getValidationPidNumberMessage().getText();
     }
 
+    public String getErrorMessageText(){
+        return getErrorMessage().getText();
+    }
 
     public String getRegisterSuccessFullyMessageText(){
         return getRegisterSuccessFullyMessage().getText();
@@ -84,8 +94,18 @@ public class RegisterPage {
         getPasswordTextBox().sendKeys(password);
         getConfirmPasswordTextBox().sendKeys(confirmPassword);
         getPidNumberTextBox().sendKeys(pidNumber);
-
+        Helpers.scrollToElement(getRegisterButton());
         getRegisterButton().click();
+    }
+
+    @Override
+    protected String getPageName() {
+        return Constants.pageName.REGISTER_PAGE;
+    }
+
+    @Override
+    protected String getPageHeading() {
+        return Constants.pageHeading.REGISTER_PAGE;
     }
 
 }

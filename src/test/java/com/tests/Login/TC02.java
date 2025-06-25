@@ -1,9 +1,10 @@
 package com.tests.Login;
 
-import com.example.pages.BasePage;
-import com.example.pages.HomePage;
-import com.example.pages.LoginPage;
+import com.Railway.constant.Constants;
+import com.Railway.pages.BasePage;
+import com.Railway.pages.LoginPage;
 import com.tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC02 extends TestBase {
@@ -11,17 +12,17 @@ public class TC02 extends TestBase {
     @Test
     public void testLoginFail() {
         LoginPage loginPage = new LoginPage();
-        BasePage basePage = new BasePage();
 
-        basePage.clickLoginTab();
-        
-        String nullUsername = "";
-        String validPassword = "12345678";
-        String expectedLoginFailMessage = "There was a problem with your login and/or errors exist in your form.";
+
+        loginPage.clickOnTab();
+
+        String nullUsername = Constants.accountData.NULL_USERNAME;
+        String validPassword = Constants.accountData.VALID_PASSWORD;
+        String expectedLoginFailMessage = Constants.errorMessage.LOGIN_ERROR_MESSAGE;
 
         loginPage.login(nullUsername, validPassword);
 
-        org.testng.Assert.assertEquals(loginPage.getLoginFailMessageText(), expectedLoginFailMessage);
+        Assert.assertEquals(loginPage.getLoginFailMessageText(), expectedLoginFailMessage);
 
     }
 }

@@ -1,30 +1,32 @@
 package com.tests.Register;
 
-import com.example.pages.BasePage;
-import com.example.pages.RegisterPage;
+import com.Railway.constant.Constants;
+import com.Railway.pages.BasePage;
+import com.Railway.pages.RegisterPage;
 import com.tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC11 extends TestBase {
 
     @Test
     public void testRegisterWithEmptyPIDnPassword() {
-        BasePage basePage = new BasePage();
         RegisterPage registerPage = new RegisterPage();
 
-        basePage.clickRegisterTab();
+        registerPage.clickOnTab();
 
-        String validEmail = "nhatanh221@gmail.com";
+        String validEmail = Constants.accountData.VALID_REGISTERING_EMAIL;
         String emptyPassword = "";
         String validConfirmPassword = "123324234";
-        String emptyPID = "123324234";
-        String expectedPasswordValidationMessage = "Invalid password length";
-        String expectedPIDValidationMessage = "Invalid PID length";
+        String emptyPID = "";
+        String expectedPasswordValidationMessage = Constants.validationMessage.INVALID_PASSWORD_FORMAT;
+        String expectedPIDValidationMessage = Constants.validationMessage.INVALID_PID_FORMAT;
+        String expectedRegisterErrorMessage = Constants.errorMessage.REGISTER_ERROR_MESSAGE;
 
-        basePage.scrollToBottom();
         registerPage.register(validEmail, emptyPassword, validConfirmPassword, emptyPID);
 
-        org.testng.Assert.assertEquals(registerPage.getValidationPasswordMessageText(), expectedPasswordValidationMessage);
-
+        Assert.assertEquals(registerPage.getErrorMessageText(), expectedRegisterErrorMessage);
+        Assert.assertEquals(registerPage.getValidationConfirmPasswordMessageText(), expectedPasswordValidationMessage);
+        Assert.assertEquals(registerPage.getValidationPidNumberMessageText(), expectedPIDValidationMessage);
     }
 }

@@ -1,10 +1,12 @@
-package com.example.pages;
+package com.Railway.pages;
 
-import com.example.driver.DriverManager;
+import com.Railway.constant.Constants;
+import com.Railway.driver.DriverManager;
+import com.Railway.utilities.Helpers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class ChangePasswordPage {
+public class ChangePasswordPage extends BasePage {
 
     private final By changePasswordTitle= By.xpath("//h1[text()='Change password']");
     private final By changePasswordSuccessFullyMessage= By.xpath("//p[@class='message success']");
@@ -45,11 +47,19 @@ public class ChangePasswordPage {
         getOldPasswordTextBox().sendKeys(oldPassword);
         getNewPasswordTextBox().sendKeys(newPassword);
         getConfirmPasswordTextBox().sendKeys(confirmPassword);
+        Helpers.scrollToElement(getChangePasswordButton());
+
         getChangePasswordButton().click();
     }
 
-    public String getChangePasswordTitleText(){
-        return getChangePasswordTitle().getText();
+    @Override
+    protected String getPageName() {
+        return Constants.pageName.CHANGE_PASSWORD_PAGE;
+    }
+
+    @Override
+    protected String getPageHeading() {
+        return Constants.pageHeading.CHANGE_PASSWORD_PAGE;
     }
 
     public String getChangePasswordFailMessageText(){

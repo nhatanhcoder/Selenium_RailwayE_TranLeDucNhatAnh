@@ -1,4 +1,4 @@
-package com.example.driver;
+package com.Railway.driver;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

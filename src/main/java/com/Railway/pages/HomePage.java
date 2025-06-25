@@ -1,20 +1,20 @@
-package com.example.pages;
+package com.Railway.pages;
 
+import com.Railway.constant.Constants;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import com.example.driver.DriverManager;
+import com.Railway.driver.DriverManager;
 
-public class HomePage {
+public class HomePage extends BasePage{
 
-    private final By welcomeMessage = By.xpath("//h1[text()='%s']");
-
-    private WebElement getWelcomeMessage(String message){
-        return DriverManager.getDriver().findElement(By.xpath(String.format(welcomeMessage.toString(), message)));
+    @Override
+    protected String getPageName() {
+        return Constants.pageName.HOME_PAGE;
     }
 
-    public String getWelcomeMessageText(String message){
-        return getWelcomeMessage(message).getText();
+    @Override
+    protected String getPageHeading() {
+        return Constants.pageHeading.HOME_PAGE;
     }
-
 }

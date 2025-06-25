@@ -1,25 +1,26 @@
 package com.tests.Login;
 
-import com.example.pages.BasePage;
-import com.example.pages.LoginPage;
+import com.Railway.constant.Constants;
+import com.Railway.pages.BasePage;
+import com.Railway.pages.LoginPage;
 import com.tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TC03 extends TestBase {
     @Test
     public void loginFailWithInvalidPassword() {
         LoginPage loginPage = new LoginPage();
-        BasePage basePage = new BasePage();
 
-        basePage.clickLoginTab();
+        loginPage.clickOnTab();
 
-        String validUserame = "nhatanhkof@gmail.com";
-        String invalidPassword = "1234xx5678";
-        String expectedLoginFailMessage = "There was a problem with your login and/or errors exist in your form.";
+        String validUserame = Constants.accountData.VALID_USERNAME;
+        String invalidPassword = Constants.accountData.INVALID_PASSWORD;
+        String expectedLoginFailMessage = Constants.errorMessage.LOGIN_ERROR_MESSAGE;
 
         loginPage.login(validUserame, invalidPassword);
 
-        org.testng.Assert.assertEquals(loginPage.getLoginFailMessageText(), expectedLoginFailMessage);
+        Assert.assertEquals(loginPage.getLoginFailMessageText(), expectedLoginFailMessage);
 
     }
 

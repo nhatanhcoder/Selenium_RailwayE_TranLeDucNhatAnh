@@ -1,19 +1,21 @@
-package com.example.pages;
+package com.Railway.pages;
 
-import com.example.driver.DriverManager;
+import com.Railway.constant.Constants;
+import com.Railway.driver.DriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-public class MyTicketPage {
+public class MyTicketPage extends BasePage {
 
-    private final By myticketTilte= By.xpath("//h1[text()='Manage ticket']");
-
-    private WebElement getMyticketTilte(){
-        return DriverManager.getDriver().findElement(myticketTilte);
+    @Override
+    protected String getPageHeading() {
+        return Constants.pageHeading.MY_TICKET_PAGE;
     }
 
-    public String getMyticketTilteText(){
-        return getMyticketTilte().getText();
+    @Override
+    protected String getPageName() {
+        return Constants.pageName.MY_TICKET_PAGE;
     }
+
 
 }

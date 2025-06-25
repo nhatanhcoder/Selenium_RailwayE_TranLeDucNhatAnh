@@ -1,8 +1,10 @@
 package com.tests.ChangePassword;
 
-import com.example.pages.BasePage;
-import com.example.pages.ChangePasswordPage;
-import com.example.pages.LoginPage;
+import com.Railway.constant.Constants;
+import com.Railway.pages.BasePage;
+import com.Railway.pages.ChangePasswordPage;
+import com.Railway.pages.LoginPage;
+import com.Railway.utilities.Helpers;
 import com.tests.TestBase;
 import org.testng.annotations.Test;
 
@@ -12,24 +14,21 @@ public class TC09 extends TestBase {
     public void testChangePasswordSuccessfully(){
         LoginPage loginPage = new LoginPage();
         ChangePasswordPage changePasswordPage = new ChangePasswordPage();
-        BasePage basePage = new BasePage();
 
-        basePage.clickLoginTab();
+        loginPage.clickOnTab();
 
-        String validUsername = "nhatanhkof@gmail.com";
-        String validPassword = "password";
+        String validUsername = Constants.accountData.VALID_USERNAME;
+        String validPassword = Constants.accountData.VALID_PASSWORD;
         String newPassword = "password22";
-        String confirmNewPassword = "password22";
-        String expectedChangePasswordSuccessMessage = "Your password has been updated";
+        String confirmNewPassword = newPassword;
+        String expectedChangePasswordSuccessMessage = Constants.message.CHANGE_PASSWORD_SUCCESS_MESSAGE;
 
         loginPage.login(validUsername, validPassword);
 
-        basePage.clickChangePasswordTab();
-
-        basePage.scrollToBottom();
+        changePasswordPage.clickOnTab();
 
         changePasswordPage.changePassword(validPassword, newPassword, confirmNewPassword);
 
         org.testng.Assert.assertEquals(changePasswordPage.getChangePasswordSuccessFullyMessageText(), expectedChangePasswordSuccessMessage);
-    }
+       }
 }
