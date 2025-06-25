@@ -1,11 +1,11 @@
 package com.tests.Login;
-
+import com.Railway.pages.HomePage;
 import com.tests.TestBase;
-    
-import com.example.pages.LoginPage;
-import com.example.pages.BasePage;
-import com.example.pages.HomePage;
+import com.Railway.pages.LoginPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+import com.Railway.constant.Constants;
+
 
 public class TC01 extends TestBase {
 
@@ -13,18 +13,17 @@ public class TC01 extends TestBase {
     public void testLogin() {
         LoginPage loginPage = new LoginPage();
         HomePage homePage = new HomePage();
-        BasePage basePage = new BasePage();
 
-        basePage.clickLoginTab();
+        loginPage.clickOnTab();
 
-        String expectedWelcomeMessage = "Welcome to Safe Railway";
-        String validUsername = "nhatanhkof@gmail.com";
-        String validPassword = "12345678";
+        String expectedWelcomeMessage = Constants.message.WELCOME_MESSAGE;
+        String validUsername = Constants.accountData.VALID_USERNAME;
+        String validPassword = Constants.accountData.VALID_PASSWORD;
 
         loginPage.login(validUsername, validPassword);
 
-        basePage.clickHomeTab();
+        homePage.clickOnTab();
 
-        org.testng.Assert.assertEquals(homePage.getWelcomeMessageText(), expectedWelcomeMessage);
+        Assert.assertEquals(homePage.getPageHeadingText(), expectedWelcomeMessage);
     }
 }

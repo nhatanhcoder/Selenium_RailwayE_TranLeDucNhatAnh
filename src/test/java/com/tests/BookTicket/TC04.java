@@ -1,22 +1,25 @@
 package com.tests.BookTicket;
 
-import com.example.pages.BasePage;
-import com.example.pages.LoginPage;
+import com.Railway.constant.Constants;
+import com.Railway.pages.BasePage;
+import com.Railway.pages.BookTicketPage;
+import com.Railway.pages.LoginPage;
 import com.tests.TestBase;
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
 
 public class TC04 extends TestBase {
     @Test
     public void testRedirectToLoginPageBockTicketPage(){
         LoginPage loginPage = new LoginPage();
-        BasePage basePage = new BasePage();
+        BookTicketPage bookTicketPage = new BookTicketPage();
 
-        String loginTitle = "Login page";
+        String loginHeading = Constants.pageHeading.LOGIN_PAGE;
 
-        basePage.clickBookingTab();
+        bookTicketPage.clickOnTab();
 
-        org.testng.Assert.assertEquals(loginPage.getLoginTitleText(),loginTitle);
-
+        Assert.assertEquals(loginPage.getPageHeadingText(),loginHeading);
 
     }
 }

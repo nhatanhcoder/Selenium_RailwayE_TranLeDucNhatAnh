@@ -1,7 +1,8 @@
 package com.tests.Register;
 
-import com.example.pages.BasePage;
-import com.example.pages.RegisterPage;
+import com.Railway.constant.Constants;
+import com.Railway.pages.BasePage;
+import com.Railway.pages.RegisterPage;
 import com.tests.TestBase;
 import org.testng.annotations.Test;
 
@@ -9,18 +10,16 @@ public class TC07 extends TestBase {
 
     @Test
     public void testRegisterUser() {
-        BasePage basePage = new BasePage();
         RegisterPage registerPage = new RegisterPage();
 
-        basePage.clickRegisterTab();
+        registerPage.clickOnTab();
 
-        String validEmail = "nhatanh221@gmail.com";
-        String validPassword = "123324234";
-        String validConfirmPassword = "123324234";
-        String validPID = "123324234";
-        String expectedRegisterSuccessMessage = "Thank you for registering your account";
+        String validEmail = Constants.accountData.VALID_REGISTERING_EMAIL;
+        String validPassword = Constants.accountData.VALID_REGISTERING_PASSWORD;
+        String validConfirmPassword = validPassword;
+        String validPID = Constants.accountData.VALID_REGISTERING_PID;
+        String expectedRegisterSuccessMessage = Constants.message.REGISTER_SUCCESS_MESSAGE;
 
-        basePage.scrollToBottom();
         registerPage.register(validEmail, validPassword, validConfirmPassword, validPID);
 
         org.testng.Assert.assertEquals(registerPage.getRegisterSuccessFullyMessageText(), expectedRegisterSuccessMessage);

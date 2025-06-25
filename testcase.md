@@ -107,14 +107,14 @@ TC Description: Errors display when password reset token is blank
 Pre-condition: Create and activate a new account
 Steps:
 1. Navigate to QA Railway Login page
-2. Click on "Forgot Password page" link
-3. Enter the email address of the created account in Pre-condition
-4. Click on "Send Instructions" button
-5. Open mailbox and click on reset password link
-6. Enter new passwords and remove the Password Reset Token
-7. Click "Reset Password" button
-Expected Behavior: Error message "The password reset token is incorrect or may be expired. Visit the forgot password page to generate a new one." displays above the form.
-Error message "The password reset token is invalid." displays next to the "Password Reset Token" field.
+   2. Click on "Forgot Password page" link
+   3. Enter the email address of the created account in Pre-condition
+   4. Click on "Send Instructions" button
+   5. Open mailbox and click on reset password link
+   6. Enter new passwords and remove the Password Reset Token
+   7. Click "Reset Password" button
+   Expected Behavior: Error message "The password reset token is incorrect or may be expired. Visit the forgot password page to generate a new one." displays above the form.
+   Error message "The password reset token is invalid." displays next to the "Password Reset Token" field.
 
 TC ID: TC13
 TC Description: Errors display if password and confirm password don't match when resetting password

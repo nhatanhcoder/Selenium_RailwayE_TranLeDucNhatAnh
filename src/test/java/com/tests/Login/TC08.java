@@ -1,8 +1,9 @@
 package com.tests.Login;
 
-import com.example.pages.BasePage;
-import com.example.pages.HomePage;
-import com.example.pages.LoginPage;
+import com.Railway.constant.Constants;
+import com.Railway.pages.BasePage;
+import com.Railway.pages.HomePage;
+import com.Railway.pages.LoginPage;
 import com.tests.TestBase;
 import org.testng.annotations.Test;
 
@@ -11,13 +12,12 @@ public class TC08 extends TestBase {
     public void testLoginWithUnactive() {
         LoginPage loginPage = new LoginPage();
         HomePage homePage = new HomePage();
-        BasePage basePage = new BasePage();
 
-        basePage.clickLoginTab();
+        loginPage.clickOnTab();
 
-        String expectedLoginWithUnactiveEmailMessage = "Invalid username or password. Please try again.";
-        String unactiveUsername = "nhatanh221@gmail.com";
-        String validPassword = "123324234";
+        String expectedLoginWithUnactiveEmailMessage = Constants.errorMessage.LOGIN_INVALID_ACCOUNT_MESSAGE;
+        String unactiveUsername = Constants.accountData.UNACTIVE_EMAIL;
+        String validPassword = Constants.accountData.VALID_PASSWORD;
 
         loginPage.login(unactiveUsername, validPassword);
 

@@ -1,7 +1,8 @@
 package com.tests.Register;
 
-import com.example.pages.BasePage;
-import com.example.pages.RegisterPage;
+import com.Railway.constant.Constants;
+import com.Railway.pages.BasePage;
+import com.Railway.pages.RegisterPage;
 import com.tests.TestBase;
 import org.testng.annotations.Test;
 
@@ -9,18 +10,16 @@ public class TC10 extends TestBase {
 
     @Test
     public void testRegisterPasswordNotMatch() {
-        BasePage basePage = new BasePage();
         RegisterPage registerPage = new RegisterPage();
 
-        basePage.clickRegisterTab();
+        registerPage.clickOnTab();
 
-        String validEmail = "nhatanh221@gmail.com";
-        String validPassword = "1324234chao";
-        String unmatchConfirmPassword = "1324234";
-        String validPID = "21312321";
-        String expectedConfirmPasswordValidationMessage = "The two passwords do not match";
+        String validEmail = Constants.accountData.VALID_REGISTERING_EMAIL;
+        String validPassword = Constants.accountData.VALID_REGISTERING_PASSWORD;
+        String unmatchConfirmPassword = validPassword+"sadasd";
+        String validPID = Constants.accountData.VALID_REGISTERING_PID;
+        String expectedConfirmPasswordValidationMessage = Constants.validationMessage.PASSWORD_NOT_MATCH;
 
-        basePage.scrollToBottom();
         registerPage.register(validEmail, validPassword, unmatchConfirmPassword, validPID);
 
         org.testng.Assert.assertEquals(registerPage.getValidationConfirmPasswordMessageText(), expectedConfirmPasswordValidationMessage);
