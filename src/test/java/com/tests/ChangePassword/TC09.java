@@ -5,7 +5,7 @@ import com.Railway.pages.BasePage;
 import com.Railway.pages.ChangePasswordPage;
 import com.Railway.pages.LoginPage;
 import com.Railway.utilities.Helpers;
-import com.tests.TestBase;
+import com.tests.Common.TestBase;
 import org.testng.annotations.Test;
 
 public class TC09 extends TestBase {

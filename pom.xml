@@ -35,6 +35,13 @@
             <version>4.27.0</version>
         </dependency>
 
+        <!-- Thêm Apache Commons IO để hỗ trợ capture screenshot -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>

@@ -5,7 +5,7 @@ import com.Railway.pages.BasePage;
 import com.Railway.pages.ChangePasswordPage;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.MyTicketPage;
-import com.tests.TestBase;
+import com.tests.Common.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

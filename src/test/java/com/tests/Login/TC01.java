@@ -1,6 +1,6 @@
 package com.tests.Login;
 import com.Railway.pages.HomePage;
-import com.tests.TestBase;
+import com.tests.Common.TestBase;
 import com.Railway.pages.LoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;

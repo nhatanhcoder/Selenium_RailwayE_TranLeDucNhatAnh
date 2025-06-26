@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.Railway.constant.Constants;
 import com.Railway.pages.BookTicketPage;
 import com.Railway.pages.LoginPage;
-import com.tests.TestBase;
+import com.tests.Common.TestBase;
 
 public class TC14 extends TestBase {
 

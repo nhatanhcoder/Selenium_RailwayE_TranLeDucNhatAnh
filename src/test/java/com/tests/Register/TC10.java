@@ -3,7 +3,7 @@ package com.tests.Register;
 import com.Railway.constant.Constants;
 import com.Railway.pages.BasePage;
 import com.Railway.pages.RegisterPage;
-import com.tests.TestBase;
+import com.tests.Common.TestBase;
 import org.testng.annotations.Test;
 
 public class TC10 extends TestBase {

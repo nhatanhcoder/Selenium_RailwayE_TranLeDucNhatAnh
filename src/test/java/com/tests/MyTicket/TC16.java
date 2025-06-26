@@ -3,7 +3,7 @@ package com.tests.MyTicket;
 import com.Railway.constant.Constants;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.MyTicketPage;
-import com.tests.TestBase;
+import com.tests.Common.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

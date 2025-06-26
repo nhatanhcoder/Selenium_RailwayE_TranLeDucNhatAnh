@@ -4,7 +4,7 @@ import com.Railway.constant.Constants;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.ResetPasswordPage;
 import com.Railway.thirdPartyPage.guerrillamailPage;
-import com.tests.TestBase;
+import com.tests.Common.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

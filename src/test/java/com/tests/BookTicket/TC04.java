@@ -1,10 +1,9 @@
 package com.tests.BookTicket;
 
 import com.Railway.constant.Constants;
-import com.Railway.pages.BasePage;
 import com.Railway.pages.BookTicketPage;
 import com.Railway.pages.LoginPage;
-import com.tests.TestBase;
+import com.tests.Common.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
