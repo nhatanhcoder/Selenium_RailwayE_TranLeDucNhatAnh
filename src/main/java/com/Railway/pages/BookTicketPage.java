@@ -53,19 +53,35 @@ public class BookTicketPage extends BasePage{
 
     public void bookingTicket(String departStation, String arriveStation, String departDate, String seatType, String ticketAmount) {
         getSelectBox(Constants.selectBox.DEPART_STATION).sendKeys(departStation);
-        getSelectBox(Constants.selectBox.ARRIVE_STATION).sendKeys(arriveStation);
+
+        // Kiểm tra arriveStation có phải là "Sài Gòn"
+        if (!"Sài Gòn".equalsIgnoreCase(arriveStation.trim())) {
+            getSelectBox(Constants.selectBox.ARRIVE_STATION).sendKeys(arriveStation);
+        }
+        // Nếu là "Sài Gòn" thì không làm gì (giữ nguyên lựa chọn hiện tại)
+
         getSelectBox(Constants.selectBox.DEPART_DATE).sendKeys(departDate);
         getSelectBox(Constants.selectBox.SEAT_TYPE).sendKeys(seatType);
-    
+
         // Sử dụng Select để chọn đúng ticket amount
         Select ticketAmountSelect = new Select(getSelectBox(Constants.selectBox.TICKET_AMOUNT));
         String currentSelected = ticketAmountSelect.getFirstSelectedOption().getText();
         if (!currentSelected.equals(ticketAmount)) {
             ticketAmountSelect.selectByVisibleText(ticketAmount);
         }
-    
+
         Helpers.scrollToElement(getBookTicketButton());
         getBookTicketButton().click();
+    }
+
+    public String getPostBookingData() {
+        Select departSelect = new Select(getSelectBox(Constants.selectBox.DEPART_STATION));
+        Select arriveSelect = new Select(getSelectBox(Constants.selectBox.ARRIVE_STATION));
+
+        String departStationData = departSelect.getFirstSelectedOption().getText();
+        String arriveStationData = arriveSelect.getFirstSelectedOption().getText();
+
+        return departStationData + arriveStationData;
     }
 
     @Override

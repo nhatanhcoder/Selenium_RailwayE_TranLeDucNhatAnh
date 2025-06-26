@@ -158,9 +158,9 @@ public class Constants {
             public static final String SEAT_TYPE = "Soft bed";
             public static final String TICKET_AMOUNT = "1";
         }
-        public static class ticketData3{
-            public static final String DEPART_STATION = "Đà Nẵng";
-            public static final String ARRIVE_STATION = "Nha Trang";
+        public static class ticketDataTC15{
+            public static final String DEPART_STATION = "Huế";
+            public static final String ARRIVE_STATION = "Sài Gòn";
             public static final String DEPART_DATE = "7/19/2025";
             public static final String SEAT_TYPE = "Soft seat with air conditioner";
             public static final String TICKET_AMOUNT = "1";
