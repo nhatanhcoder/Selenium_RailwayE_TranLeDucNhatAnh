@@ -29,7 +29,8 @@ public class TC16 extends TestBase {
         );
 
         int rowAfterDelete= myTicketPage.getNumberRowsOfTable();
-        Assert.assertEquals(rowAfterDelete-1,rowBeforeDelete);
+
+        Assert.assertEquals(rowAfterDelete,rowBeforeDelete-1);
 
     }
 }
