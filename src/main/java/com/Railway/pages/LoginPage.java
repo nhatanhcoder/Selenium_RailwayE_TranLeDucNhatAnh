@@ -14,7 +14,9 @@ public class LoginPage extends BasePage {
     private final By passwordTextBox = By.id("password");
     private final By loginButton = By.cssSelector("input[type='submit']");
     private final By loginFailMessage = By.xpath("//p[@class='message error LoginForm']");
-
+    private final By forgotPasswordLink = By.xpath("//a[text()='Forgot Password page']");
+    private final By forgotPasswordTextBox = By.xpath("//input[@type='text']");
+    private final By forgotPasswordButton = By.xpath("//input[@type='submit']");
     // Getters
     private WebElement getUsernameTextBox() {
         return DriverManager.getDriver().findElement(usernameTextBox);
@@ -30,6 +32,27 @@ public class LoginPage extends BasePage {
 
     private WebElement getLoginFailMessage() {
         return DriverManager.getDriver().findElement(loginFailMessage);
+    }
+
+    private WebElement getForgotPasswordLink(){
+        return DriverManager.getDriver().findElement(forgotPasswordLink);
+    }
+
+    private WebElement getForgotPasswordTextBox(){
+        return DriverManager.getDriver().findElement(forgotPasswordTextBox);
+    }
+
+    private WebElement getForgotPasswordButton(){
+        return DriverManager.getDriver().findElement(forgotPasswordButton);
+    }
+
+
+    public void clickOnForgotPasswordLink(){
+        getForgotPasswordLink().click();
+    }
+    public void enterForgotPasswordEmail(String email){
+        getForgotPasswordTextBox().sendKeys(email);
+        getForgotPasswordButton().click();
     }
 
     // Actions
@@ -73,6 +96,7 @@ public class LoginPage extends BasePage {
     protected String getPageHeading() {
         return Constants.pageHeading.LOGIN_PAGE;
     }
+
 
 
 }

@@ -23,6 +23,10 @@ public class Constants {
         public static  String VALID_REGISTERING_PASSWORD = "Pass_" + System.nanoTime();
         public static  String VALID_REGISTERING_PID = "123456789";
 
+        public static  String MAIL_SERVICE_NAME = "bachanngulam";
+        public static  String MAIL_SERVICE_DOMAIN = "grr.la";
+        public static  String NEW_PASSWORD = "bachanngulam";
+
     }
 
     public static class dateTimeFormat{
@@ -65,6 +69,8 @@ public class Constants {
         public static final String LOGIN_SUCCESS_MESSAGE = "Login Successfully";
         public static final String REGISTER_SUCCESS_MESSAGE = "Thank you for registering your account";
         public static final String CHANGE_PASSWORD_SUCCESS_MESSAGE = "Your password has been updated!";
+
+        public static final String RESET_PASSWORD_SUCCESSFULLY = "Your password has been reset successfully. Please check your email for the new password.";
     }
 
 
@@ -73,6 +79,10 @@ public class Constants {
         public static final String  INVALID_PASSWORD_FORMAT= "Invalid password length";
         public static final String  INVALID_PID_FORMAT= "Invalid PID";
         public static final String  PASSWORD_NOT_MATCH= "The two passwords do not match";
+
+        public static final String  RESET_NEW_PASS_BLANK= "Please enter a new password.";
+        public static final String  RESET_CONFIRM_NOTMATCH= "The password confirmation did not match the new password.";
+        public static final String  RESET_TOKEN_INVALID= "The password reset token is invalid.";
 
     }
 
@@ -85,7 +95,28 @@ public class Constants {
 
         public static final String REGISTER_ERROR_MESSAGE = "There're errors in the form. Please correct the errors and try again.";
 
+        public static final String RESET_PASS_ERROR_MESSAGE= "Could not reset password. Please correct the errors and try again.";
+        public static final String RESET_PASS_ERROR_TOKEN_MESSAGE= "The password reset token is incorrect or may be expired. Visit the forgot password page to generate a new";
     }
 
+    public static class pageUrr{
+
+    }
+
+    public static class Button{
+
+    }
+
+    public static class TextBox{
+        public static final String USERNAME_TEXTBOX = "Username";
+        public static final String PASSWORD_TEXTBOX = "Password";
+
+        public static final String REGISTERING_EMAIL_TEXTBOX = "Email";
+        public static final String REGISTERING_PASSWORD_TEXTBOX = "Password";
+        public static final String REGISTERING_CONFIRM_PASSWORD_TEXTBOX = "<PASSWORD>";
+        public static final String REGISTERING_PID_TEXTBOX = "PID";
+
+        public static final String FORGOT_PASSWORD = "<PASSWORD>";
+    }
 
 }
