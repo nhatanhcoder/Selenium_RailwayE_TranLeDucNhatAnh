@@ -1,8 +1,6 @@
 package com.tests.ResetPassword;
 
 import com.Railway.constant.Constants;
-import com.Railway.pages.BasePage;
-import com.Railway.pages.HomePage;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.ResetPasswordPage;
 import com.Railway.thirdPartyPage.guerrillamailPage;
@@ -10,9 +8,9 @@ import com.tests.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC12 extends TestBase {
+public class TC13 extends TestBase {
     @Test
-    public void testLogin() {
+    public void testResetNotMatchPassword() {
         LoginPage loginPage = new LoginPage();
         guerrillamailPage guerrillamailPage1 = new guerrillamailPage();
         ResetPasswordPage resetPasswordPage = new ResetPasswordPage();
@@ -29,8 +27,11 @@ public class TC12 extends TestBase {
         guerrillamailPage1.setupMailAndSelectEmailAndClickLink();
 
         String newPassword = Constants.accountData.NEW_PASSWORD;
-        resetPasswordPage.resetPassword(newPassword, newPassword);
+        String unmatchNewPassword = Constants.accountData.NEW_PASSWORD+"sdad";;
+        resetPasswordPage.resetPasswordNotMatch(newPassword,unmatchNewPassword);
 
-       // Assert.assertEquals(resetPasswordPage.);
+        Assert.assertEquals(resetPasswordPage.getResetPasswordFailMessageText(), Constants.errorMessage.RESET_PASS_ERROR_MESSAGE);
+        Assert.assertEquals(resetPasswordPage.getNotMatchedPassValidationText(), Constants.validationMessage.RESET_CONFIRM_NOTMATCH);
     }
 }
+
