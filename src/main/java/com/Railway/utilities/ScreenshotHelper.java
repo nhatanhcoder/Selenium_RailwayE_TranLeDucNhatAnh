@@ -15,7 +15,7 @@ public class ScreenshotHelper {
     public static void takeScreenshot(String fileName) {
         try {
             File srcFile = ((TakesScreenshot) DriverManager.getDriver()).getScreenshotAs(OutputType.FILE);
-            File destDir = new File("screenshots");
+            File destDir = new File("Result/screenshots");
             if (!destDir.exists()) {
                 destDir.mkdirs(); // tạo thư mục nếu chưa tồn tại
             }

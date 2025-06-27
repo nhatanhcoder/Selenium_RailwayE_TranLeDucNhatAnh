@@ -1,6 +1,7 @@
 package com.tests.MyTicket;
 
 import com.Railway.constant.Constants;
+import com.Railway.dataObject.Account;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.MyTicketPage;
 import com.tests.Common.TestBase;
@@ -15,7 +16,7 @@ public class TC16 extends TestBase {
 
         loginPage.clickOnTab();
 
-        loginPage.login(Constants.accountData.VALID_USERNAME,  Constants.accountData.VALID_PASSWORD);
+        loginPage.login(Account.VALID_ACCOUNT);
 
         myTicketPage.clickOnTab();
 

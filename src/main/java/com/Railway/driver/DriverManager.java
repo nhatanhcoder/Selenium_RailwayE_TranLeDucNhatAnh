@@ -1,28 +1,47 @@
 package com.Railway.driver;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 public class DriverManager {
-    private static WebDriver driver;
+    private static final ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static void createDriver(){
-        if(driver == null){
-            driver = new ChromeDriver();
-            driver.manage().window().maximize();
+        createDriver("chrome"); // default browser
+    }
+    
+    public static void createDriver(String browserName){
+        WebDriver webDriver;
+        
+        switch(browserName.toLowerCase()) {
+            case "chrome":
+                webDriver = new ChromeDriver();
+                break;
+            case "firefox":
+                webDriver = new FirefoxDriver();
+                break;
+            case "edge":
+                webDriver = new EdgeDriver();
+                break;
+            default:
+                throw new IllegalArgumentException("Browser not supported: " + browserName);
         }
+        
+        webDriver.manage().window().maximize();
+        driver.set(webDriver); //  Đúng cách sử dụng ThreadLocal
     }
 
     public static void quitDriver(){
-        getDriver().quit();
-        driver = null;
+        WebDriver webDriver = driver.get();
+        if(webDriver != null){
+            webDriver.quit();
+            driver.remove(); //  Xóa reference trong ThreadLocal
+        }
     }
+    
     public static WebDriver getDriver(){
-        return driver;
-    }
-    public void scrollToBottom(){
-        JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
-        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+        return driver.get(); //  Đúng cách lấy driver từ ThreadLocal
     }
 }
