@@ -1,6 +1,7 @@
 package com.tests.Login;
 
 import com.Railway.constant.Constants;
+import com.Railway.dataObject.Account;
 import com.Railway.pages.BasePage;
 import com.Railway.pages.ChangePasswordPage;
 import com.Railway.pages.LoginPage;
@@ -23,7 +24,7 @@ public class TC06 extends TestBase {
         loginPage.clickOnTab();
 
         // Login with valid credentials
-        loginPage.login(validUsername, validPassword);
+        loginPage.login(Account.VALID_ACCOUNT);
 
         // "My ticket", "Change password" and "Logout" tabs are displayed.
         Assert.assertEquals(myTicketPage.getPageNameText(), Constants.pageName.MY_TICKET_PAGE);

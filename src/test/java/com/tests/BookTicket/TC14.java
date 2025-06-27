@@ -1,5 +1,6 @@
 package com.tests.BookTicket;
 
+import com.Railway.dataObject.Account;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,7 @@ public class TC14 extends TestBase {
 
         loginPage.clickOnTab();
 
-        loginPage.login(Constants.accountData.VALID_USERNAME, Constants.accountData.VALID_PASSWORD);
+        loginPage.login(Account.VALID_ACCOUNT);
 
         bookTicketPage.clickOnTab();
 

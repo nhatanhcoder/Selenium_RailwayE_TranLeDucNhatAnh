@@ -1,8 +1,10 @@
 package com.tests.Login;
 
 import com.Railway.constant.Constants;
+import com.Railway.dataObject.Account;
 import com.Railway.pages.BasePage;
 import com.Railway.pages.LoginPage;
+import com.Railway.utilities.LogUtils;
 import com.tests.Common.TestBase;
 
 import org.testng.Assert;
@@ -12,15 +14,19 @@ public class TC03 extends TestBase {
     @Test
     public void loginFailWithInvalidPassword() {
         LoginPage loginPage = new LoginPage();
+        LogUtils logUtils = new LogUtils();
 
-        loginPage.clickOnTab();
-
-        String validUserame = Constants.accountData.VALID_USERNAME;
-        String invalidPassword = Constants.accountData.INVALID_PASSWORD;
         String expectedLoginFailMessage = Constants.errorMessage.LOGIN_ERROR_MESSAGE;
 
-        loginPage.login(validUserame, invalidPassword);
+        //Step1
+        logUtils.info("Step 1: Go to login page");
 
+        //Step2
+        logUtils.info("Step 2: Login with invalid account");
+        loginPage.login(Account.INVALID_ACCOUNT);
+
+        //Step3
+        logUtils.info("Step 3: Check error message");
         Assert.assertEquals(loginPage.getLoginFailMessageText(), expectedLoginFailMessage);
 
     }

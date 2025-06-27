@@ -1,6 +1,7 @@
 package com.tests.ChangePassword;
 
 import com.Railway.constant.Constants;
+import com.Railway.dataObject.Account;
 import com.Railway.pages.BasePage;
 import com.Railway.pages.ChangePasswordPage;
 import com.Railway.pages.LoginPage;
@@ -23,7 +24,7 @@ public class TC09 extends TestBase {
         String confirmNewPassword = newPassword;
         String expectedChangePasswordSuccessMessage = Constants.message.CHANGE_PASSWORD_SUCCESS_MESSAGE;
 
-        loginPage.login(validUsername, validPassword);
+        loginPage.login(Account.VALID_ACCOUNT);
 
         changePasswordPage.clickOnTab();
 

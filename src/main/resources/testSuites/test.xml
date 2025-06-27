@@ -7,7 +7,7 @@
     </listeners>
     <test name="ParallelTest">
     <classes>
-            <class name="com.tests.Login.TC01"/>
+            <class name="com.tests.Login.TC01"></class>
             <class name="com.tests.Login.TC02"></class>
             <class name="com.tests.Login.TC03"></class>
             <!-- <class name="com.tests.Login.TC05"></class>

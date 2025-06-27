@@ -33,8 +33,11 @@ public class Constants {
     public static class dateTimeFormat{
         public static final String HH_MM_SS = "HH:mm:ss";
         public static final String DD_MM_YYYY = "dd/MM/yyyy";
+        public static final String YYYY_MM_DD_HH_MM_SS = "yyyy/MM/dd HH:mm:ss";
         //bookticket page
         public static final String M_DD_YYYY = "M/dd/yyyy";
+
+
     }
 
 
@@ -145,8 +148,8 @@ public class Constants {
     }
     public static class ticketData{
         public static class ticketDataTC14{
-            public static final String DEPART_STATION = "Sài Gòn";
-            public static final String ARRIVE_STATION = "Nha Trang";
+            public static final String DEPART_STATION = "Nha Trang";
+            public static final String ARRIVE_STATION = "Đà Nẵng";
             public static final String DEPART_DATE = "7/16/2025";
             public static final String SEAT_TYPE = "Soft seat with air conditioner";
             public static final String TICKET_AMOUNT = "1";
@@ -165,6 +168,12 @@ public class Constants {
             public static final String SEAT_TYPE = "Soft seat with air conditioner";
             public static final String TICKET_AMOUNT = "1";
         }
+    }
+
+    public static class screenshot{
+        public static final String SCREENSHOT_PATH = "Result/screenshots";
+        public static final String LOG_PATH = "Result/logs";
+        public static final String REPORT_PATH = "Result/reports";
     }
 
 }

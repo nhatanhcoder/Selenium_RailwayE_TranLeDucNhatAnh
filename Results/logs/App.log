@@ -1,0 +1,18 @@
+[INFO ] 27-06-2025 17:07:49 [main] LogUtils - Step 1: Go to login page
+[INFO ] 27-06-2025 17:07:49 [main] LogUtils - Step 2: Login with invalid account
+[INFO ] 27-06-2025 17:07:50 [main] LogUtils - Input username
+[INFO ] 27-06-2025 17:07:50 [main] LogUtils - Input password
+[INFO ] 27-06-2025 17:07:50 [main] LogUtils - Click login Button
+[INFO ] 27-06-2025 17:07:51 [main] LogUtils - Step 3: Check error message
+[INFO ] 27-06-2025 17:08:13 [main] LogUtils - Step 1: Go to login page
+[INFO ] 27-06-2025 17:08:13 [main] LogUtils - Step 2: Login with invalid account
+[INFO ] 27-06-2025 17:08:14 [main] LogUtils - Input username
+[INFO ] 27-06-2025 17:08:31 [main] LogUtils - Step 1: Go to login page
+[INFO ] 27-06-2025 17:08:31 [main] LogUtils - Step 2: Login with invalid account
+[INFO ] 27-06-2025 17:08:32 [main] LogUtils - Input username
+[INFO ] 27-06-2025 17:09:12 [main] LogUtils - Step 1: Go to login page
+[INFO ] 27-06-2025 17:09:12 [main] LogUtils - Step 2: Login with invalid account
+[INFO ] 27-06-2025 17:09:12 [main] LogUtils - Input username
+[INFO ] 27-06-2025 17:09:12 [main] LogUtils - Input password
+[INFO ] 27-06-2025 17:09:13 [main] LogUtils - Click login Button
+[INFO ] 27-06-2025 17:09:13 [main] LogUtils - Step 3: Check error message
