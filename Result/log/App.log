@@ -19,3 +19,224 @@
 [INFO ] 27-06-2025 17:15:00 [main] LogUtils - Input password
 [INFO ] 27-06-2025 17:15:00 [main] LogUtils - Click login Button
 [INFO ] 27-06-2025 17:15:00 [main] LogUtils - Step 3: Go to home page
+[INFO ] 30-06-2025 06:48:37 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 30-06-2025 06:48:46 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testLoginFail
+[INFO ] 30-06-2025 06:48:46 [TestNG-test-ParallelTest-2] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:48:46 [TestNG-test-ParallelTest-2] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:48:46 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-3] LogUtils - START TEST: loginFailWithInvalidPassword
+[INFO ] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-3] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-3] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-3] LogUtils - Clear form đăng nhập
+[ERROR] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-3] LogUtils - FAILED: loginFailWithInvalidPasswordorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9fea2f37d6f26665097a8e685e5969cb, findElement {value=username, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\nhata\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56732}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56732/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9fea2f37d6f26665097a8e685e5969cb
+[INFO ] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testLogin
+[INFO ] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-1] LogUtils - Step 1: Go to login page
+[ERROR] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-2] LogUtils - FAILED: testLoginFailorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9f96f5b3bea97c819bebd607c723b5b6, findElement {value=username, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\nhata\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56734}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56734/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9f96f5b3bea97c819bebd607c723b5b6
+[ERROR] 30-06-2025 06:48:47 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testLoginorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a//span[text()='Login']"}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0654ea56c389b14be6cf5f1dfbb21a57, findElement {value=//a//span[text()='Login'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\nhata\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56733}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56733/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0654ea56c389b14be6cf5f1dfbb21a57
+[INFO ] 30-06-2025 06:48:48 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 30-06-2025 06:50:13 [main] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:50:14 [main] LogUtils - Step 2: Login with valid account
+[INFO ] 30-06-2025 06:50:14 [main] LogUtils - Login với tài khoản hợp lệ
+[INFO ] 30-06-2025 06:50:14 [main] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:50:14 [main] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:50:14 [main] LogUtils - Input username
+[INFO ] 30-06-2025 06:50:14 [main] LogUtils - Input password
+[INFO ] 30-06-2025 06:50:14 [main] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:50:16 [main] LogUtils - Step 3: Go to home page
+[INFO ] 30-06-2025 06:50:16 [main] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:50:17 [main] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:50:18 [main] LogUtils - Check point: Check welcome message
+[INFO ] 30-06-2025 06:50:18 [main] LogUtils - Lấy tiêu đề trang HomePage
+[INFO ] 30-06-2025 06:52:42 [main] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:52:53 [main] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:52:54 [main] LogUtils - Step 2: Login with valid account
+[INFO ] 30-06-2025 06:52:54 [main] LogUtils - Login với tài khoản hợp lệ
+[INFO ] 30-06-2025 06:52:54 [main] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:52:54 [main] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:52:54 [main] LogUtils - Input username
+[INFO ] 30-06-2025 06:52:54 [main] LogUtils - Input password
+[INFO ] 30-06-2025 06:52:54 [main] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:52:56 [main] LogUtils - Step 3: Go to home page
+[INFO ] 30-06-2025 06:52:56 [main] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:52:57 [main] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:52:58 [main] LogUtils - Check point: Check welcome message
+[INFO ] 30-06-2025 06:52:58 [main] LogUtils - Lấy tiêu đề trang HomePage
+[INFO ] 30-06-2025 06:53:16 [main] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:53:16 [main] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:53:16 [main] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:54:16 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 30-06-2025 06:54:22 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testLogin
+[INFO ] 30-06-2025 06:54:22 [TestNG-test-ParallelTest-1] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:54:22 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testLoginFail
+[INFO ] 30-06-2025 06:54:22 [TestNG-test-ParallelTest-2] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:54:23 [TestNG-test-ParallelTest-3] LogUtils - START TEST: loginFailWithInvalidPassword
+[INFO ] 30-06-2025 06:54:23 [TestNG-test-ParallelTest-3] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-1] LogUtils - Step 2: Login with valid account
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-1] LogUtils - Login với tài khoản hợp lệ
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-2] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-3] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-3] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:54:24 [TestNG-test-ParallelTest-2] LogUtils - Input username
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-2] LogUtils - Input password
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-3] LogUtils - Input username
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-2] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-3] LogUtils - Input password
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-3] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-2] LogUtils - Step 3: Check error message
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-2] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-3] LogUtils - Step 3: Check error message
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-3] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-2] LogUtils - PASSED: testLoginFail
+[ERROR] 30-06-2025 06:54:25 [TestNG-test-ParallelTest-3] LogUtils - FAILED: loginFailWithInvalidPasswordjava.lang.AssertionError: expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+[INFO ] 30-06-2025 06:54:26 [TestNG-test-ParallelTest-1] LogUtils - Step 3: Go to home page
+[INFO ] 30-06-2025 06:54:26 [TestNG-test-ParallelTest-1] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:54:27 [TestNG-test-ParallelTest-1] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:54:28 [TestNG-test-ParallelTest-1] LogUtils - Check point: Check welcome message
+[INFO ] 30-06-2025 06:54:28 [TestNG-test-ParallelTest-1] LogUtils - Lấy tiêu đề trang HomePage
+[INFO ] 30-06-2025 06:54:28 [TestNG-test-ParallelTest-1] LogUtils - PASSED: testLogin
+[INFO ] 30-06-2025 06:54:28 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 30-06-2025 06:57:35 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 30-06-2025 06:57:41 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testLogin
+[INFO ] 30-06-2025 06:57:41 [TestNG-test-ParallelTest-1] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:57:42 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testLoginFail
+[INFO ] 30-06-2025 06:57:42 [TestNG-test-ParallelTest-3] LogUtils - START TEST: loginFailWithInvalidPassword
+[INFO ] 30-06-2025 06:57:42 [TestNG-test-ParallelTest-3] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:57:42 [TestNG-test-ParallelTest-2] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-1] LogUtils - Step 2: Login with valid account
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-1] LogUtils - Login với tài khoản hợp lệ
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-3] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-3] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-3] LogUtils - Input username
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-2] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-3] LogUtils - Input password
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-2] LogUtils - Input username
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-3] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-2] LogUtils - Input password
+[INFO ] 30-06-2025 06:57:43 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-2] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-1] LogUtils - Step 3: Go to home page
+[INFO ] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-1] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-3] LogUtils - Step 3: Check error message
+[INFO ] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-3] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-2] LogUtils - Step 3: Check error message
+[INFO ] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-2] LogUtils - Lấy thông báo lỗi đăng nhập
+[ERROR] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-3] LogUtils - FAILED: loginFailWithInvalidPasswordjava.lang.AssertionError: expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+[INFO ] 30-06-2025 06:57:44 [TestNG-test-ParallelTest-2] LogUtils - PASSED: testLoginFail
+[ERROR] 30-06-2025 06:57:45 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testLoginorg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29ac50a69037641f542f27c4c9cf27ad, clickElement {id=f.25B63FFA511431EF9A4BEBA1C927C1E3.d.C478BB00A2C787FBC67C6EB77E7FE0C0.e.34}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\nhata\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63302/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (29ac50a69037641f542f27c4c9cf27ad)] -> xpath: //a//span[text()='Home']]
+Session ID: 29ac50a69037641f542f27c4c9cf27ad
+[INFO ] 30-06-2025 06:57:46 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 30-06-2025 06:58:12 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 30-06-2025 06:58:18 [TestNG-test-ParallelTest-3] LogUtils - START TEST: loginFailWithInvalidPassword
+[INFO ] 30-06-2025 06:58:18 [TestNG-test-ParallelTest-3] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:58:18 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testLoginFail
+[INFO ] 30-06-2025 06:58:18 [TestNG-test-ParallelTest-2] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:58:18 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testLogin
+[INFO ] 30-06-2025 06:58:18 [TestNG-test-ParallelTest-1] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-3] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-3] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-3] LogUtils - Input username
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-3] LogUtils - Input password
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-3] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-2] LogUtils - Step 2: Login with invalid account
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-1] LogUtils - Step 2: Login with valid account
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-1] LogUtils - Login với tài khoản hợp lệ
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-2] LogUtils - Input username
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-2] LogUtils - Input password
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-2] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 30-06-2025 06:58:19 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 30-06-2025 06:58:20 [TestNG-test-ParallelTest-3] LogUtils - Step 3: Check error message
+[INFO ] 30-06-2025 06:58:20 [TestNG-test-ParallelTest-3] LogUtils - Lấy thông báo lỗi đăng nhập
+[ERROR] 30-06-2025 06:58:20 [TestNG-test-ParallelTest-3] LogUtils - FAILED: loginFailWithInvalidPasswordjava.lang.AssertionError: expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+[INFO ] 30-06-2025 06:58:20 [TestNG-test-ParallelTest-2] LogUtils - Step 3: Check error message
+[INFO ] 30-06-2025 06:58:20 [TestNG-test-ParallelTest-2] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 30-06-2025 06:58:20 [TestNG-test-ParallelTest-2] LogUtils - PASSED: testLoginFail
+[INFO ] 30-06-2025 06:58:21 [TestNG-test-ParallelTest-1] LogUtils - Step 3: Go to home page
+[INFO ] 30-06-2025 06:58:21 [TestNG-test-ParallelTest-1] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:58:22 [TestNG-test-ParallelTest-1] LogUtils - Lấy tên trang HomePage
+[INFO ] 30-06-2025 06:58:23 [TestNG-test-ParallelTest-1] LogUtils - Check point: Check welcome message
+[INFO ] 30-06-2025 06:58:23 [TestNG-test-ParallelTest-1] LogUtils - Lấy tiêu đề trang HomePage
+[INFO ] 30-06-2025 06:58:23 [TestNG-test-ParallelTest-1] LogUtils - PASSED: testLogin
+[INFO ] 30-06-2025 06:58:23 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 30-06-2025 07:14:12 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 30-06-2025 07:14:23 [TestNG-test-ParallelTest-3] LogUtils - START TEST: loginFailWithInvalidPassword
+[INFO ] 30-06-2025 07:14:23 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testLogin
+[INFO ] 30-06-2025 07:14:23 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testLoginFail
+[INFO ] 30-06-2025 07:14:24 [TestNG-test-ParallelTest-2] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 07:14:24 [TestNG-test-ParallelTest-1] LogUtils - Step 1: Go to login page
+[INFO ] 30-06-2025 07:14:24 [TestNG-test-ParallelTest-3] LogUtils - Step 1: Go to login page
+[ERROR] 30-06-2025 07:14:24 [TestNG-test-ParallelTest-3] LogUtils - FAILED: loginFailWithInvalidPasswordorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a//span[text()='Login']"}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [54dfc8171fdbb3d7a5dbc77b86a81174, findElement {using=xpath, value=//a//span[text()='Login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\nhata\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59067}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59067/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 54dfc8171fdbb3d7a5dbc77b86a81174
+[ERROR] 30-06-2025 07:14:24 [TestNG-test-ParallelTest-2] LogUtils - FAILED: testLoginFailorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a//span[text()='Login']"}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [162635b536b5792a88b2da363781e87b, findElement {using=xpath, value=//a//span[text()='Login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\nhata\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59066}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59066/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 162635b536b5792a88b2da363781e87b
+[ERROR] 30-06-2025 07:14:24 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testLoginorg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a//span[text()='Login']"}
+  (Session info: chrome=137.0.7151.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d42bcc6728109a29de1bb7857f2a6dfa, findElement {using=xpath, value=//a//span[text()='Login']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.122, chrome: {chromedriverVersion: 137.0.7151.119 (e0ac9d12dff..., userDataDir: C:\Users\nhata\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59068/devtoo..., se:cdpVersion: 137.0.7151.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d42bcc6728109a29de1bb7857f2a6dfa
+[INFO ] 30-06-2025 07:14:27 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====

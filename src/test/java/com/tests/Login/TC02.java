@@ -20,6 +20,7 @@ public class TC02 extends TestBase {
         String expectedLoginFailMessage = Constants.errorMessage.LOGIN_ERROR_MESSAGE;
         //Step1
         logUtils.info("Step 1: Go to login page");
+        loginPage.clickOnTab();
 
         //Step2
         logUtils.info("Step 2: Login with invalid account");

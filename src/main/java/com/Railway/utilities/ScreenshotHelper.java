@@ -9,6 +9,8 @@ import org.openqa.selenium.WebDriver;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ScreenshotHelper {
 
@@ -19,7 +21,10 @@ public class ScreenshotHelper {
             if (!destDir.exists()) {
                 destDir.mkdirs(); // tạo thư mục nếu chưa tồn tại
             }
-            File destFile = new File(destDir, fileName);
+            // Thêm ngày giờ vào tên file
+            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+            String safeFileName = fileName + "_" + timestamp + ".png";
+            File destFile = new File(destDir, safeFileName);
             FileUtils.copyFile(srcFile, destFile);
             System.out.println("Screenshot saved to: " + destFile.getAbsolutePath());
         } catch (Exception e) {

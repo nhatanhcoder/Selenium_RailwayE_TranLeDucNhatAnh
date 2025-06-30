@@ -1,6 +1,7 @@
 package com.Railway.pages;
 
 import com.Railway.utilities.Helpers;
+import com.Railway.utilities.LogUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -32,12 +33,12 @@ public class BookTicketPage extends BasePage{
     }
 
     public String getBookSuccessData() {
+        LogUtils.info("Lấy dữ liệu thành công sau khi đặt vé");
         String departStationData = getTicketDataAfterBook(Constants.ticketTableHeading.DEPART_STATION).getText();
         String arriveStationData = getTicketDataAfterBook(Constants.ticketTableHeading.ARRIVE_STATION).getText();
         String departDateData = getTicketDataAfterBook(Constants.ticketTableHeading.DEPART_DATE).getText();
         String seatTypeData = getTicketDataAfterBook(Constants.ticketTableHeading.SEAT_TYPE).getText();
         String ticketAmountData = getTicketDataAfterBook(Constants.ticketTableHeading.AMOUNT).getText();
-    
         return String.join(" | ",
             departStationData,
             arriveStationData,
@@ -48,39 +49,34 @@ public class BookTicketPage extends BasePage{
     }
     
     public String getBookSuccessMessageText(){
+        LogUtils.info("Lấy thông báo thành công sau khi đặt vé");
         return getBookSuccessMessage().getText();
     }
 
     public void bookingTicket(String departStation, String arriveStation, String departDate, String seatType, String ticketAmount) {
+        LogUtils.info(String.format("Đặt vé: %s -> %s, ngày: %s, loại ghế: %s, số lượng: %s", departStation, arriveStation, departDate, seatType, ticketAmount));
         getSelectBox(Constants.selectBox.DEPART_STATION).sendKeys(departStation);
-
-        // Kiểm tra arriveStation có phải là "Sài Gòn"
         if (!"Sài Gòn".equalsIgnoreCase(arriveStation.trim())) {
             getSelectBox(Constants.selectBox.ARRIVE_STATION).sendKeys(arriveStation);
         }
-        // Nếu là "Sài Gòn" thì không làm gì (giữ nguyên lựa chọn hiện tại)
-
         getSelectBox(Constants.selectBox.DEPART_DATE).sendKeys(departDate);
         getSelectBox(Constants.selectBox.SEAT_TYPE).sendKeys(seatType);
-
-        // Sử dụng Select để chọn đúng ticket amount
         Select ticketAmountSelect = new Select(getSelectBox(Constants.selectBox.TICKET_AMOUNT));
         String currentSelected = ticketAmountSelect.getFirstSelectedOption().getText();
         if (!currentSelected.equals(ticketAmount)) {
             ticketAmountSelect.selectByVisibleText(ticketAmount);
         }
-
         Helpers.scrollToElement(getBookTicketButton());
+        LogUtils.info("Click nút Book Ticket");
         getBookTicketButton().click();
     }
 
     public String getPostBookingData() {
+        LogUtils.info("Lấy dữ liệu sau khi đặt vé");
         Select departSelect = new Select(getSelectBox(Constants.selectBox.DEPART_STATION));
         Select arriveSelect = new Select(getSelectBox(Constants.selectBox.ARRIVE_STATION));
-
         String departStationData = departSelect.getFirstSelectedOption().getText();
         String arriveStationData = arriveSelect.getFirstSelectedOption().getText();
-
         return departStationData + arriveStationData;
     }
 

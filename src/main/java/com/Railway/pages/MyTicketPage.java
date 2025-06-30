@@ -2,6 +2,7 @@ package com.Railway.pages;
 
 import com.Railway.constant.Constants;
 import com.Railway.driver.DriverManager;
+import com.Railway.utilities.LogUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,6 +13,7 @@ public class MyTicketPage extends BasePage {
     private final By ticketManageTable = By.xpath("//table[@class='MyTable']");
 
     private WebElement getTicketManageTable(){
+        LogUtils.info("Lấy bảng quản lý vé của tôi");
         return DriverManager.getDriver().findElement(ticketManageTable);
     }
 
@@ -26,42 +28,44 @@ public class MyTicketPage extends BasePage {
                         "]//input[@type='button' and @value='Cancel']",
                 depart, arrive, seatType, departDate, amount
         );
+        LogUtils.info(String.format("Tìm nút Hủy vé với thông tin: %s-%s-%s-%s-%s", depart, arrive, seatType, departDate, amount));
         return DriverManager.getDriver().findElement(By.xpath(xpath));
     }
 
     public void deleteATicket(String depart, String arrive, String seatType, String departDate, String amount){
-        // 1) Đếm số dòng ban đầu
+        LogUtils.info("Bắt đầu xóa vé khỏi bảng vé của tôi");
         int initialCount = getNumberRowsOfTable();
-
-        // 2) Click nút Cancel
+        LogUtils.info("Số dòng ban đầu: " + initialCount);
         getCancelButton(depart, arrive, seatType, departDate, amount).click();
-
-        // 3) Đợi alert xuất hiện và accept (tương đương Enter)
+        LogUtils.info("Đã click nút Hủy vé, chờ xác nhận alert");
         WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
         alert.accept();
-
-        // 4) Đợi số dòng trong table giảm đi 1
+        LogUtils.info("Đã xác nhận alert, chờ cập nhật bảng vé");
         wait.until(ExpectedConditions.numberOfElementsToBe(
                 By.xpath("//table[@class='MyTable']//tr[position()>1]"),
                 initialCount - 1
         ));
+        LogUtils.info("Đã xóa vé thành công");
     }
 
     public int getNumberRowsOfTable(){
-        // Nếu bạn chỉ muốn đếm dữ liệu (không tính header), dùng position()>1
-        return getTicketManageTable()
+        int count = getTicketManageTable()
                 .findElements(By.xpath(".//tr[position()>1]"))
                 .size();
+        LogUtils.info("Số lượng vé hiện tại trong bảng: " + count);
+        return count;
     }
 
     @Override
     protected String getPageHeading() {
+        LogUtils.info("Lấy tiêu đề trang Vé của tôi");
         return Constants.pageHeading.MY_TICKET_PAGE;
     }
 
     @Override
     protected String getPageName() {
+        LogUtils.info("Lấy tên trang Vé của tôi");
         return Constants.pageName.MY_TICKET_PAGE;
     }
 
