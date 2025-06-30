@@ -1,5 +1,8 @@
 package com.Railway.driver;
 
+import java.io.FileReader;
+import java.io.Reader;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -44,4 +47,5 @@ public class DriverManager {
     public static WebDriver getDriver(){
         return driver.get(); //  Đúng cách lấy driver từ ThreadLocal
     }
+
 }

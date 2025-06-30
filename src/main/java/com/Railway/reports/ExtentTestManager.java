@@ -49,4 +49,3 @@ public class ExtentTestManager {
         getTest().log(status, message);
     }
 }
-

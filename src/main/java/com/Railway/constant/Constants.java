@@ -2,6 +2,8 @@ package com.Railway.constant;
 
 public class Constants {
     public static final String BASE_URL = "http://saferailway.somee.com/";
+    public static final String DATA_FILE_PATH = "src/main/java/com/Railway/dataObject/data.json";
+
     // Test Data Constants
     public static class accountData{
         //Login page

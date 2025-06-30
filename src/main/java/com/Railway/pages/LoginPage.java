@@ -70,6 +70,16 @@ public class LoginPage extends BasePage {
         getLoginButton().click();
     }
 
+    public void login(String username, String password) {
+        clearLoginForm();
+        LogUtils.info("Input username");
+        getUsernameTextBox().sendKeys(username);
+        LogUtils.info("Input password");
+        getPasswordTextBox().sendKeys(password);
+        LogUtils.info("Click login Button");
+        getLoginButton().click();
+    }
+
     public void loginSuccess() {
         LogUtils.info("Login với tài khoản hợp lệ");
         clearLoginForm();
