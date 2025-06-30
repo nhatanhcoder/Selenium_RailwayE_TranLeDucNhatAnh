@@ -3,6 +3,7 @@ package com.Railway.pages;
 import com.Railway.constant.Constants;
 import com.Railway.driver.DriverManager;
 import com.Railway.utilities.Helpers;
+import com.Railway.utilities.LogUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -66,45 +67,49 @@ public class RegisterPage extends BasePage{
         return DriverManager.getDriver().findElement(errorMessage);
     }
 
-    public String getValidationEmailMessageText(){
-        return getValidationEmailMessage().getText();
-    }
-
-    public String getValidationPasswordMessageText(){
-        return getValidationPasswordMessage().getText();
-    }
-
-    public String getValidationConfirmPasswordMessageText(){
-        return getValidationConfirmPasswordMessage().getText();
-    }
-
-    public String getValidationPidNumberMessageText(){
-        return getValidationPidNumberMessage().getText();
-    }
-
-    public String getErrorMessageText(){
-        return getErrorMessage().getText();
-    }
-
-    public String getRegisterSuccessFullyMessageText(){
-        return getRegisterSuccessFullyMessage().getText();
-    }
     public void register(String email, String password, String confirmPassword, String pidNumber){
+        LogUtils.info(String.format("Đăng ký tài khoản với email: %s, mật khẩu: %s, xác nhận: %s, PID: %s", email, password, confirmPassword, pidNumber));
         getEmailTextBox().sendKeys(email);
         getPasswordTextBox().sendKeys(password);
         getConfirmPasswordTextBox().sendKeys(confirmPassword);
         getPidNumberTextBox().sendKeys(pidNumber);
         Helpers.scrollToElement(getRegisterButton());
+        LogUtils.info("Click nút Đăng ký");
         getRegisterButton().click();
     }
 
+    public String getRegisterSuccessFullyMessageText(){
+        LogUtils.info("Lấy thông báo đăng ký thành công");
+        return getRegisterSuccessFullyMessage().getText();
+    }
+    public String getErrorMessageText(){
+        LogUtils.info("Lấy thông báo lỗi đăng ký");
+        return getErrorMessage().getText();
+    }
+    public String getValidationEmailMessageText(){
+        LogUtils.info("Lấy thông báo validate email");
+        return getValidationEmailMessage().getText();
+    }
+    public String getValidationPasswordMessageText(){
+        LogUtils.info("Lấy thông báo validate mật khẩu");
+        return getValidationPasswordMessage().getText();
+    }
+    public String getValidationConfirmPasswordMessageText(){
+        LogUtils.info("Lấy thông báo validate xác nhận mật khẩu");
+        return getValidationConfirmPasswordMessage().getText();
+    }
+    public String getValidationPidNumberMessageText(){
+        LogUtils.info("Lấy thông báo validate PID");
+        return getValidationPidNumberMessage().getText();
+    }
     @Override
     protected String getPageName() {
+        LogUtils.info("Lấy tên trang Đăng ký");
         return Constants.pageName.REGISTER_PAGE;
     }
-
     @Override
     protected String getPageHeading() {
+        LogUtils.info("Lấy tiêu đề trang Đăng ký");
         return Constants.pageHeading.REGISTER_PAGE;
     }
 

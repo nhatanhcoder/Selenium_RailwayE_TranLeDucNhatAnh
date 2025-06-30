@@ -1,6 +1,7 @@
 package com.Railway.pages;
 
 import com.Railway.driver.DriverManager;
+import com.Railway.utilities.LogUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -45,28 +46,36 @@ public class ResetPasswordPage {
         return DriverManager.getDriver().findElement(blankNewPasswordValidation);
     }
     public String getBlankNewPasswordValidationText(){
+        LogUtils.info("Lấy thông báo mật khẩu mới bị bỏ trống");
         return getBlankNewPasswordValidation().getText();
     }
     public String getResetPasswordFailMessageText(){
+        LogUtils.info("Lấy thông báo lỗi đặt lại mật khẩu");
         return getResetPasswordFailMessage().getText();
     }
     public String getNotMatchedPassValidationText(){
+        LogUtils.info("Lấy thông báo xác nhận mật khẩu không khớp");
         return getNotMatchedPassValidation().getText();
     }
     public String getInvalidTokenValidationText(){
+        LogUtils.info("Lấy thông báo token không hợp lệ");
         return getInvalidTokenValidation().getText();
     }
 
     public void resetPassword(String newPassword, String confirmPassword){
+        LogUtils.info(String.format("Đặt lại mật khẩu: mật khẩu mới: %s, xác nhận: %s", newPassword, confirmPassword));
         getNewPasswordTextBox().sendKeys(newPassword);
         getConfirmPasswordTextBox().sendKeys(confirmPassword);
         getTokenTextBox().clear();
+        LogUtils.info("Click nút Đặt lại mật khẩu");
         getResetPasswordButton().click();
     }
 
     public void resetPasswordNotMatch(String newPassword, String confirmPassword){
+        LogUtils.info(String.format("Đặt lại mật khẩu (không khớp): mật khẩu mới: %s, xác nhận: %s", newPassword, confirmPassword));
         getNewPasswordTextBox().sendKeys(newPassword);
         getConfirmPasswordTextBox().sendKeys(confirmPassword);
+        LogUtils.info("Click nút Đặt lại mật khẩu");
         getResetPasswordButton().click();
     }
 

@@ -20,7 +20,7 @@ public class TC03 extends TestBase {
 
         //Step1
         logUtils.info("Step 1: Go to login page");
-
+        loginPage.clickOnTab();
         //Step2
         logUtils.info("Step 2: Login with invalid account");
         loginPage.login(Account.INVALID_ACCOUNT);

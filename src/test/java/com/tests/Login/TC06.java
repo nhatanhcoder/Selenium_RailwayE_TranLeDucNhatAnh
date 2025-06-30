@@ -7,6 +7,7 @@ import com.Railway.pages.ChangePasswordPage;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.MyTicketPage;
 import com.tests.Common.TestBase;
+import com.Railway.utilities.LogUtils;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -21,11 +22,14 @@ public class TC06 extends TestBase {
         String validUsername = Constants.accountData.VALID_USERNAME;
         String validPassword = Constants.accountData.VALID_PASSWORD;
 
+        LogUtils.info("Step 1: Go to login page");
         loginPage.clickOnTab();
 
+        LogUtils.info("Step 2: Login with valid credentials");
         // Login with valid credentials
         loginPage.login(Account.VALID_ACCOUNT);
 
+        LogUtils.info("Step 3: Check 'My ticket', 'Change password', 'Logout' tabs");
         // "My ticket", "Change password" and "Logout" tabs are displayed.
         Assert.assertEquals(myTicketPage.getPageNameText(), Constants.pageName.MY_TICKET_PAGE);
         System.out.println(Constants.pageName.MY_TICKET_PAGE);
@@ -34,6 +38,7 @@ public class TC06 extends TestBase {
         Assert.assertEquals(loginPage.getPageNameText(Constants.pageName.LOGOUT), Constants.pageName.LOGOUT);
         System.out.println(Constants.pageName.LOGOUT);
 
+        LogUtils.info("Step 4: Go to My Ticket page and check heading");
         // Verify user is directed to My ticket page
         myTicketPage.clickOnTab();
         String myTicketTitle = Constants.pageHeading.MY_TICKET_PAGE;
@@ -43,9 +48,6 @@ public class TC06 extends TestBase {
         changePasswordPage.clickOnTab();
         String changePasswordTitle = Constants.pageName.CHANGE_PASSWORD_PAGE;
         Assert.assertEquals(changePasswordPage.getPageHeadingText(), changePasswordTitle);
-
-
-
     }
 }
 

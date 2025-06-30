@@ -33,6 +33,6 @@ public class TC01 extends TestBase {
         homePage.clickOnTab();
         logUtils.info("Check point: Check welcome message");
 
-        Assert.assertEquals(homePage.getPageHeadingText(), Constants.message.LOGIN_SUCCESS_MESSAGE);
+        Assert.assertEquals(homePage.getPageHeadingText(), Constants.pageHeading.HOME_PAGE);
     }
 }
