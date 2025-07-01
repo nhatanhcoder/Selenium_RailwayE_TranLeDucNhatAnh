@@ -1,6 +1,6 @@
-package com.Railway.dataObject;
+package com.Railway.dataObject.Enum;
 
-public enum Account {
+public enum AccountEnum {
 
     VALID_ACCOUNT("nhatanhkof@gmail.com", "Password "),
     INVALID_ACCOUNT("nhatanhkofs@gmail.com", "Password"),
@@ -9,7 +9,7 @@ public enum Account {
     private final String username;
     private final String password;
 
-    Account(String username, String password){
+    AccountEnum(String username, String password){
         this.username = username;
         this.password = password;
     }

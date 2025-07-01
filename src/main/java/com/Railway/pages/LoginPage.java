@@ -1,7 +1,7 @@
 package com.Railway.pages;
 
 import com.Railway.constant.Constants;
-import com.Railway.dataObject.Account;
+import com.Railway.dataObject.Enum.AccountEnum;
 import com.Railway.utilities.Helpers;
 import com.Railway.utilities.LogUtils;
 import org.openqa.selenium.By;
@@ -60,7 +60,7 @@ public class LoginPage extends BasePage {
     }
 
     // Actions
-    public void login(Account account) {
+    public void login(AccountEnum account) {
         clearLoginForm();
         LogUtils.info("Input username");
         getUsernameTextBox().sendKeys(account.getUsername());
@@ -83,7 +83,7 @@ public class LoginPage extends BasePage {
     public void loginSuccess() {
         LogUtils.info("Login với tài khoản hợp lệ");
         clearLoginForm();
-        login(Account.VALID_ACCOUNT);
+        login(AccountEnum.VALID_ACCOUNT);
     }
 
     public String getLoginFailMessageText() {

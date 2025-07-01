@@ -1,11 +1,9 @@
 package com.tests.ChangePassword;
 
 import com.Railway.constant.Constants;
-import com.Railway.dataObject.Account;
-import com.Railway.pages.BasePage;
+import com.Railway.dataObject.Enum.AccountEnum;
 import com.Railway.pages.ChangePasswordPage;
 import com.Railway.pages.LoginPage;
-import com.Railway.utilities.Helpers;
 import com.Railway.utilities.LogUtils;
 import com.tests.Common.TestBase;
 import org.testng.annotations.Test;
@@ -22,12 +20,12 @@ public class TC09 extends TestBase {
 
         String validUsername = Constants.accountData.VALID_USERNAME;
         String validPassword = Constants.accountData.VALID_PASSWORD;
-        String newPassword = "password22";
+        String newPassword = "Password ";
         String confirmNewPassword = newPassword;
         String expectedChangePasswordSuccessMessage = Constants.message.CHANGE_PASSWORD_SUCCESS_MESSAGE;
 
         LogUtils.info("Bước 2: Đăng nhập vào tài khoản");
-        loginPage.login(Account.VALID_ACCOUNT);
+        loginPage.login(AccountEnum.VALID_ACCOUNT);
 
         LogUtils.info("Bước 3: Truy cập trang đổi mật khẩu");
         changePasswordPage.clickOnTab();

@@ -16,12 +16,24 @@ public class Helpers {
                 .scrollByAmount(0, element.getRect().y)
                 .perform();
     }
-    public static void waitForDynamicElement(int duration, String elementXpath, List<WebElement> oldList) {
-        WebDriverWait wait = (WebDriverWait) new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(duration)).ignoring(Exception.class);
 
-        wait.until(d -> {
-            List<WebElement> newList = DriverManager.getDriver().findElements(By.xpath(elementXpath));
-            return !newList.equals(oldList);
+    /**
+     * Waits until the number of elements matching the xpath changes from the old list's size.
+     * Useful for waiting until dynamic content loads or changes.
+     *
+     * @param duration      Timeout in seconds.
+     * @param elementXpath  Xpath of the element(s) to watch for change.
+     * @param oldList       The previous list of elements (can be empty but not null).
+     */
+    public static void waitForDynamicElement(int duration, String elementXpath, List<WebElement> oldList) {
+        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(duration));
+        wait.ignoring(Exception.class).until(driver -> {
+            try {
+                List<WebElement> newList = DriverManager.getDriver().findElements(By.xpath(elementXpath));
+                return !newList.equals(oldList);
+            } catch (Exception ex) {
+                return false;
+            }
         });
     }
 }

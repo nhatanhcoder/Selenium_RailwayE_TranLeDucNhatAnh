@@ -1,8 +1,7 @@
 package com.tests.Login;
 
 import com.Railway.constant.Constants;
-import com.Railway.dataObject.Account;
-import com.Railway.pages.BasePage;
+import com.Railway.dataObject.Enum.AccountEnum;
 import com.Railway.pages.ChangePasswordPage;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.MyTicketPage;
@@ -27,7 +26,7 @@ public class TC06 extends TestBase {
 
         LogUtils.info("Step 2: Login with valid credentials");
         // Login with valid credentials
-        loginPage.login(Account.VALID_ACCOUNT);
+        loginPage.login(AccountEnum.VALID_ACCOUNT);
 
         LogUtils.info("Step 3: Check 'My ticket', 'Change password', 'Logout' tabs");
         // "My ticket", "Change password" and "Logout" tabs are displayed.

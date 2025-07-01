@@ -129,7 +129,7 @@ public class Constants {
         public static final String FORGOT_PASSWORD = "<PASSWORD>";
     }
 
-    public static class selectBox{
+    public static class selectBoxName{
         //Book ticket page
         public static final String DEPART_DATE="Date";
         public static final String DEPART_STATION = "DepartStation";
