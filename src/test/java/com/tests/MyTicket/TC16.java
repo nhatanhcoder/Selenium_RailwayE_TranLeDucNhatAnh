@@ -1,7 +1,7 @@
 package com.tests.MyTicket;
 
 import com.Railway.constant.Constants;
-import com.Railway.dataObject.Account;
+import com.Railway.dataObject.Enum.AccountEnum;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.MyTicketPage;
 import com.Railway.utilities.LogUtils;
@@ -19,7 +19,7 @@ public class TC16 extends TestBase {
         loginPage.clickOnTab();
 
         LogUtils.info("Bước 2: Đăng nhập vào tài khoản");
-        loginPage.login(Account.VALID_ACCOUNT);
+        loginPage.login(AccountEnum.VALID_ACCOUNT);
 
         myTicketPage.clickOnTab();
 

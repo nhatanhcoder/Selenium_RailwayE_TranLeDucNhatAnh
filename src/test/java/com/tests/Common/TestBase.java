@@ -26,9 +26,10 @@ package com.tests.Common;
 
         @DataProvider(name = "TestDataProvider")
         public Object[][] provideTestData(java.lang.reflect.Method method) {
-            String testName = method.getName();  // Lấy tên method test như "testLogin"
-
-            JsonElement element = TestDataLoader.getTestData("TC01"); // Chỉ lấy data TC01
+            String testName = method.getName();  // Lấy tên method test
+            String className = method.getDeclaringClass().getSimpleName(); // Lấy tên class như "TC01", "TC14"
+            
+            JsonElement element = TestDataLoader.getTestData(className); // Sử dụng class name thay vì hardcode
             if (element.isJsonObject()) {
                 return new Object[][] { { element.getAsJsonObject() } };
             } else if (element.isJsonArray()) {
@@ -39,7 +40,7 @@ package com.tests.Common;
                 }
                 return data;
             } else {
-                throw new IllegalArgumentException("Unsupported data format for test: " + testName);
+                throw new IllegalArgumentException("Unsupported data format for test: " + className);
             }
         }
     }

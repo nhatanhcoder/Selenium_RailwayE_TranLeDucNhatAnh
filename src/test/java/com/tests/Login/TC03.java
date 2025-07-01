@@ -1,8 +1,7 @@
 package com.tests.Login;
 
 import com.Railway.constant.Constants;
-import com.Railway.dataObject.Account;
-import com.Railway.pages.BasePage;
+import com.Railway.dataObject.Enum.AccountEnum;
 import com.Railway.pages.LoginPage;
 import com.Railway.utilities.LogUtils;
 import com.tests.Common.TestBase;
@@ -23,7 +22,7 @@ public class TC03 extends TestBase {
         loginPage.clickOnTab();
         //Step2
         logUtils.info("Step 2: Login with invalid account");
-        loginPage.login(Account.INVALID_ACCOUNT);
+        loginPage.login(AccountEnum.INVALID_ACCOUNT);
 
         //Step3
         logUtils.info("Step 3: Check error message");

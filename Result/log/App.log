@@ -291,3 +291,699 @@ Session ID: d42bcc6728109a29de1bb7857f2a6dfa
 [INFO ] 30-06-2025 17:17:16 [main] LogUtils - Lấy tên trang HomePage
 [INFO ] 30-06-2025 17:17:17 [main] LogUtils - Check point: Check welcome message
 [INFO ] 30-06-2025 17:17:17 [main] LogUtils - Lấy tiêu đề trang HomePage
+[INFO ] 01-07-2025 10:46:46 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 01-07-2025 10:46:53 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testLoginFail
+[INFO ] 01-07-2025 10:46:53 [TestNG-test-ParallelTest-3] LogUtils - START TEST: loginFailWithInvalidPassword
+[INFO ] 01-07-2025 10:46:53 [TestNG-test-ParallelTest-2] LogUtils - Step 1: Go to login page
+[INFO ] 01-07-2025 10:46:53 [TestNG-test-ParallelTest-3] LogUtils - Step 1: Go to login page
+[INFO ] 01-07-2025 10:46:53 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testLogin
+[INFO ] 01-07-2025 10:46:53 [TestNG-test-ParallelTest-1] LogUtils - Step 1: Go to login page
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-1] LogUtils - Step 2: Login with valid account
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-3] LogUtils - Step 2: Login with invalid account
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-2] LogUtils - Step 2: Login with invalid account
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-3] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-2] LogUtils - Input username
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-3] LogUtils - Input username
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-2] LogUtils - Input password
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-3] LogUtils - Input password
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-2] LogUtils - Click login Button
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-3] LogUtils - Click login Button
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-3] LogUtils - Step 3: Check error message
+[INFO ] 01-07-2025 10:46:54 [TestNG-test-ParallelTest-3] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 01-07-2025 10:46:55 [TestNG-test-ParallelTest-2] LogUtils - Step 3: Check error message
+[INFO ] 01-07-2025 10:46:55 [TestNG-test-ParallelTest-2] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 01-07-2025 10:46:55 [TestNG-test-ParallelTest-2] LogUtils - PASSED: testLoginFail
+[ERROR] 01-07-2025 10:46:55 [TestNG-test-ParallelTest-3] LogUtils - FAILED: loginFailWithInvalidPasswordjava.lang.AssertionError: expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+[INFO ] 01-07-2025 10:46:55 [TestNG-test-ParallelTest-1] LogUtils - Step 3: Go to home page
+[INFO ] 01-07-2025 10:46:55 [TestNG-test-ParallelTest-1] LogUtils - Lấy tên trang HomePage
+[INFO ] 01-07-2025 10:46:56 [TestNG-test-ParallelTest-1] LogUtils - Check point: Check welcome message
+[INFO ] 01-07-2025 10:46:56 [TestNG-test-ParallelTest-1] LogUtils - Lấy tiêu đề trang HomePage
+[INFO ] 01-07-2025 10:46:56 [TestNG-test-ParallelTest-1] LogUtils - PASSED: testLogin
+[INFO ] 01-07-2025 10:46:57 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 01-07-2025 14:06:09 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:06:09 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:06:09 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:06:09 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:06:09 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:06:09 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:06:10 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:06:11 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:06:11 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: null, loại ghế: Soft bed with air conditioner, số lượng: null
+[INFO ] 01-07-2025 14:06:11 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:06:11 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:06:28 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:06:29 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:06:29 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:06:29 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:06:29 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:06:29 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:06:30 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:06:31 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:06:31 [main] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: null, loại ghế: Soft bed, số lượng: null
+[INFO ] 01-07-2025 14:06:31 [main] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:06:31 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:06:32 [main] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:06:32 [main] LogUtils - Chọn depart date: null
+[INFO ] 01-07-2025 14:06:36 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:06:37 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:06:37 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:06:37 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:06:37 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:06:37 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:06:38 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:06:39 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:06:39 [main] LogUtils - Đặt vé: Nha Trang -> Đà Nẵng, ngày: null, loại ghế: Hard bed, số lượng: null
+[INFO ] 01-07-2025 14:06:39 [main] LogUtils - Chọn depart station: Nha Trang
+[INFO ] 01-07-2025 14:06:39 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:06:40 [main] LogUtils - Chọn arrive station: Đà Nẵng
+[INFO ] 01-07-2025 14:06:40 [main] LogUtils - Chọn depart date: null
+[INFO ] 01-07-2025 14:08:26 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:08:26 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:08:27 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:08:28 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:08:28 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:08:29 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:08:29 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:08:29 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:08:29 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:08:29 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:08:29 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:08:29 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:08:29 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:08:45 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:08:46 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:08:46 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:08:46 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:08:46 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:08:46 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:08:47 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:08:47 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:08:47 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:08:47 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:08:48 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:08:48 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:08:48 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:08:48 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:08:48 [main] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: 2025-07-22, loại ghế: Soft bed, số lượng: 1
+[INFO ] 01-07-2025 14:08:48 [main] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:08:48 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:08:49 [main] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:08:49 [main] LogUtils - Chọn depart date: 2025-07-22
+[INFO ] 01-07-2025 14:08:49 [main] LogUtils - Chọn seat type: Soft bed
+[INFO ] 01-07-2025 14:08:49 [main] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:08:49 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:08:49 [main] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:08:50 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:08:50 [main] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: 2025-07-22, loại ghế: Soft bed, số lượng: 1
+[INFO ] 01-07-2025 14:08:50 [main] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:08:50 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:08:50 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:08:50 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 14:08:50 [main] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:08:50 [main] LogUtils - Chọn depart date: 2025-07-22
+[INFO ] 01-07-2025 14:08:51 [main] LogUtils - Chọn seat type: Soft bed
+[INFO ] 01-07-2025 14:08:51 [main] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:08:51 [main] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:08:52 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:08:52 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 14:08:56 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:08:56 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:08:56 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:08:56 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:08:57 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:08:57 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:08:57 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:08:58 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:08:58 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:08:58 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:08:58 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:08:58 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:08:58 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:08:59 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:08:59 [main] LogUtils - Đặt vé: Nha Trang -> Đà Nẵng, ngày: 2025-07-16, loại ghế: Hard bed, số lượng: 1
+[INFO ] 01-07-2025 14:08:59 [main] LogUtils - Chọn depart station: Nha Trang
+[INFO ] 01-07-2025 14:08:59 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Chọn arrive station: Đà Nẵng
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Chọn depart date: 2025-07-16
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Chọn seat type: Hard bed
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Đặt vé: Nha Trang -> Đà Nẵng, ngày: 2025-07-16, loại ghế: Hard bed, số lượng: 1
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Chọn depart station: Nha Trang
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:09:00 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:09:01 [main] LogUtils - Chọn arrive station: Đà Nẵng
+[INFO ] 01-07-2025 14:09:01 [main] LogUtils - Chọn depart date: 2025-07-16
+[INFO ] 01-07-2025 14:09:01 [main] LogUtils - Chọn seat type: Hard bed
+[INFO ] 01-07-2025 14:09:01 [main] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:09:01 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:09:01 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 14:09:01 [main] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:09:02 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:09:02 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 14:09:42 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 01-07-2025 14:09:47 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:09:47 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:09:48 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:09:48 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:09:48 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:09:48 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:09:48 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:09:49 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:09:50 [TestNG-test-ParallelTest-1] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:09:50 [TestNG-test-ParallelTest-1] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:09:50 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:09:50 [TestNG-test-ParallelTest-1] LogUtils - Đợi arrive station options được cập nhật...
+[ERROR] 01-07-2025 14:10:00 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.Railway.utilities.Helpers$$Lambda/0x00000273b33e9ae8@30dbfdb3 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\TRANLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56164}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56164/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6e2def4efd2509ac00a57d08d6f397e3
+[INFO ] 01-07-2025 14:10:07 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:10:07 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:10:07 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:10:07 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:10:07 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:10:07 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:10:07 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:10:08 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:10:09 [TestNG-test-ParallelTest-1] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:10:09 [TestNG-test-ParallelTest-1] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: 2025-07-22, loại ghế: Soft bed, số lượng: 1
+[INFO ] 01-07-2025 14:10:09 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:10:09 [TestNG-test-ParallelTest-1] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:10:10 [TestNG-test-ParallelTest-1] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:10:10 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart date: 2025-07-22
+[INFO ] 01-07-2025 14:10:10 [TestNG-test-ParallelTest-1] LogUtils - Chọn seat type: Soft bed
+[INFO ] 01-07-2025 14:10:10 [TestNG-test-ParallelTest-1] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:10:10 [TestNG-test-ParallelTest-1] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:10:11 [TestNG-test-ParallelTest-1] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:10:11 [TestNG-test-ParallelTest-1] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[ERROR] 01-07-2025 14:10:11 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketjava.lang.AssertionError: Dữ liệu đặt vé hiển thị không khớp expected [Huế | Quảng Ngãi | 2025-07-22 | Soft bed | 1] but found [Huế | Quảng Ngãi | 7/4/2025 | Soft bed | 1]
+[INFO ] 01-07-2025 14:10:17 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:10:17 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:10:17 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:10:17 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:10:17 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:10:17 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:10:17 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:10:18 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:10:19 [TestNG-test-ParallelTest-1] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:10:19 [TestNG-test-ParallelTest-1] LogUtils - Đặt vé: Nha Trang -> Đà Nẵng, ngày: 2025-07-16, loại ghế: Hard bed, số lượng: 1
+[INFO ] 01-07-2025 14:10:19 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart station: Nha Trang
+[INFO ] 01-07-2025 14:10:19 [TestNG-test-ParallelTest-1] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:10:20 [TestNG-test-ParallelTest-1] LogUtils - Chọn arrive station: Đà Nẵng
+[INFO ] 01-07-2025 14:10:20 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart date: 2025-07-16
+[INFO ] 01-07-2025 14:10:20 [TestNG-test-ParallelTest-1] LogUtils - Chọn seat type: Hard bed
+[INFO ] 01-07-2025 14:10:20 [TestNG-test-ParallelTest-1] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:10:20 [TestNG-test-ParallelTest-1] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:10:21 [TestNG-test-ParallelTest-1] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:10:21 [TestNG-test-ParallelTest-1] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[ERROR] 01-07-2025 14:10:21 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketjava.lang.AssertionError: Dữ liệu đặt vé hiển thị không khớp expected [Nha Trang | Đà Nẵng | 2025-07-16 | Hard bed | 1] but found [Nha Trang | Đà Nẵng | 7/4/2025 | Hard bed | 1]
+[INFO ] 01-07-2025 14:10:22 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 01-07-2025 14:17:24 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 01-07-2025 14:17:28 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:17:28 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:17:29 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:17:29 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:17:29 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:17:29 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:17:29 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:17:30 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:17:31 [TestNG-test-ParallelTest-1] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:17:31 [TestNG-test-ParallelTest-1] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:17:31 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:17:31 [TestNG-test-ParallelTest-1] LogUtils - Đợi arrive station options được cập nhật...
+[ERROR] 01-07-2025 14:17:41 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.Railway.utilities.Helpers$$Lambda/0x0000025b4d3e9320@267668e2 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\TRANLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56367}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56367/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 99a340489d9784ca59840ecc063ca5ae
+[INFO ] 01-07-2025 14:17:47 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:17:47 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:17:48 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:17:48 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:17:48 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:17:48 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:17:48 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:17:49 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:17:50 [TestNG-test-ParallelTest-1] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:17:50 [TestNG-test-ParallelTest-1] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: 2025-07-22, loại ghế: Soft bed, số lượng: 1
+[INFO ] 01-07-2025 14:17:50 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:17:50 [TestNG-test-ParallelTest-1] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:17:50 [TestNG-test-ParallelTest-1] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:17:50 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart date: 2025-07-22
+[INFO ] 01-07-2025 14:17:50 [TestNG-test-ParallelTest-1] LogUtils - Chọn seat type: Soft bed
+[INFO ] 01-07-2025 14:17:50 [TestNG-test-ParallelTest-1] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:17:51 [TestNG-test-ParallelTest-1] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:17:51 [TestNG-test-ParallelTest-1] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:17:51 [TestNG-test-ParallelTest-1] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[ERROR] 01-07-2025 14:17:52 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketjava.lang.AssertionError: Dữ liệu đặt vé hiển thị không khớp expected [Huế | Quảng Ngãi | 2025-07-22 | Soft bed | 1] but found [Huế | Quảng Ngãi | 7/4/2025 | Soft bed | 1]
+[INFO ] 01-07-2025 14:17:57 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:17:57 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:17:57 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:17:57 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:17:57 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:17:57 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:17:57 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:17:58 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[ERROR] 01-07-2025 14:17:59 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketorg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aa47279de007cd78656b498f092a2f94, clickElement {id=f.839E8585E420242AE9CD87A5CC89D7E0.d.97F0DDE5617521E998E3EB48163FF436.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\TRANLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56433/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (aa47279de007cd78656b498f092a2f94)] -> xpath: //a//span[text()='Book ticket']]
+Session ID: aa47279de007cd78656b498f092a2f94
+[INFO ] 01-07-2025 14:17:59 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 01-07-2025 14:18:34 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 01-07-2025 14:18:39 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:18:39 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:18:39 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:18:39 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:18:39 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:18:39 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:18:40 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:18:40 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:18:41 [TestNG-test-ParallelTest-1] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:18:41 [TestNG-test-ParallelTest-1] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:18:41 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:18:41 [TestNG-test-ParallelTest-1] LogUtils - Đợi arrive station options được cập nhật...
+[ERROR] 01-07-2025 14:18:52 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketorg.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.Railway.utilities.Helpers$$Lambda/0x0000020f013e9ca0@396ecd6f (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\TRANLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56473}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56473/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 052412e2fde47e2817627e3a50b1087b
+[INFO ] 01-07-2025 14:18:57 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:18:57 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:18:57 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:18:57 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:18:58 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:18:58 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:18:58 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:18:59 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:18:59 [TestNG-test-ParallelTest-1] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:18:59 [TestNG-test-ParallelTest-1] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: 2025-07-22, loại ghế: Soft bed, số lượng: 1
+[INFO ] 01-07-2025 14:18:59 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:18:59 [TestNG-test-ParallelTest-1] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:19:00 [TestNG-test-ParallelTest-1] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:19:00 [TestNG-test-ParallelTest-1] LogUtils - Chọn depart date: 2025-07-22
+[INFO ] 01-07-2025 14:19:00 [TestNG-test-ParallelTest-1] LogUtils - Chọn seat type: Soft bed
+[INFO ] 01-07-2025 14:19:00 [TestNG-test-ParallelTest-1] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:19:00 [TestNG-test-ParallelTest-1] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:19:01 [TestNG-test-ParallelTest-1] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:19:01 [TestNG-test-ParallelTest-1] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[ERROR] 01-07-2025 14:19:01 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketjava.lang.AssertionError: Dữ liệu đặt vé hiển thị không khớp expected [Huế | Quảng Ngãi | 2025-07-22 | Soft bed | 1] but found [Huế | Quảng Ngãi | 7/4/2025 | Soft bed | 1]
+[INFO ] 01-07-2025 14:19:07 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testBookTicket
+[INFO ] 01-07-2025 14:19:07 [TestNG-test-ParallelTest-1] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:19:07 [TestNG-test-ParallelTest-1] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:19:07 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:19:07 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 01-07-2025 14:19:07 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 01-07-2025 14:19:07 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:19:07 [TestNG-test-ParallelTest-1] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[ERROR] 01-07-2025 14:19:08 [TestNG-test-ParallelTest-1] LogUtils - FAILED: testBookTicketorg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.97)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a68cd03e99debf28f9275ccb0db62a1e, clickElement {id=f.B884C00B4AF4F56DADBC9B5E13CFE110.d.5F10581C078A78DE68639D0D66638F23.e.28}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.97, chrome: {chromedriverVersion: 138.0.7204.92 (f079b9bc781e..., userDataDir: C:\Users\TRANLE~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56541}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56541/devtoo..., se:cdpVersion: 138.0.7204.97, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a68cd03e99debf28f9275ccb0db62a1e)] -> xpath: //a//span[text()='Book ticket']]
+Session ID: a68cd03e99debf28f9275ccb0db62a1e
+[INFO ] 01-07-2025 14:19:09 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 01-07-2025 14:40:17 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:40:18 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:40:18 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:40:18 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:40:18 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:40:18 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:40:19 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:40:19 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:40:19 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:40:20 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:40:20 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:40:34 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:40:35 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:40:35 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:40:35 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:40:35 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:40:35 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:40:35 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:40:37 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:40:37 [main] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: 2025-07-22, loại ghế: Soft bed, số lượng: 1
+[INFO ] 01-07-2025 14:40:37 [main] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:40:37 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:40:38 [main] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:40:38 [main] LogUtils - Chọn depart date: 2025-07-22
+[INFO ] 01-07-2025 14:40:38 [main] LogUtils - Chọn seat type: Soft bed
+[INFO ] 01-07-2025 14:40:38 [main] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:40:38 [main] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:40:39 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:40:39 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 14:40:43 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:40:44 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:40:44 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:40:44 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:40:44 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:40:44 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:40:45 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:40:46 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:40:46 [main] LogUtils - Đặt vé: Nha Trang -> Đà Nẵng, ngày: 2025-07-16, loại ghế: Hard bed, số lượng: 1
+[INFO ] 01-07-2025 14:40:46 [main] LogUtils - Chọn depart station: Nha Trang
+[INFO ] 01-07-2025 14:40:46 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:40:47 [main] LogUtils - Chọn arrive station: Đà Nẵng
+[INFO ] 01-07-2025 14:40:47 [main] LogUtils - Chọn depart date: 2025-07-16
+[INFO ] 01-07-2025 14:40:47 [main] LogUtils - Chọn seat type: Hard bed
+[INFO ] 01-07-2025 14:40:47 [main] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:40:47 [main] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:40:48 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:40:48 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 14:42:28 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:42:28 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:42:28 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:42:28 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:42:28 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:42:29 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:42:30 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:42:30 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:42:30 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:42:30 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:42:30 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:42:45 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:42:45 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:42:45 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:42:45 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:42:45 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:42:45 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:42:46 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:42:47 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:42:47 [main] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: 2025-07-22, loại ghế: Soft bed, số lượng: 1
+[INFO ] 01-07-2025 14:42:47 [main] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:42:47 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:42:48 [main] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:42:48 [main] LogUtils - Chọn depart date: 2025-07-22
+[INFO ] 01-07-2025 14:42:48 [main] LogUtils - Chọn seat type: Soft bed
+[INFO ] 01-07-2025 14:42:48 [main] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:42:59 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:43:11 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:43:38 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:43:38 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:43:38 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:43:38 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:43:38 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:43:38 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:43:40 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:43:40 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:43:49 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:43:52 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:46:22 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:46:23 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:46:23 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:46:23 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:46:24 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:46:24 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:46:24 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:46:24 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:46:24 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:46:25 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:46:25 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:46:25 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:46:25 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:46:25 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:46:27 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:46:28 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:46:28 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:46:28 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:46:28 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:46:34 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:46:34 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:46:55 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:46:56 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:46:56 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:46:56 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:46:56 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:46:56 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:46:57 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:46:58 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:46:58 [main] LogUtils - Đặt vé: Sài Gòn -> Phan Thiết, ngày: 2025-07-03, loại ghế: Soft bed with air conditioner, số lượng: 1
+[INFO ] 01-07-2025 14:46:58 [main] LogUtils - Chọn depart station: Sài Gòn
+[INFO ] 01-07-2025 14:46:58 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:47:13 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:47:13 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:47:13 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:47:14 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:47:14 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:47:14 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:47:15 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 14:47:15 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 14:47:15 [main] LogUtils - Đặt vé: Huế -> Quảng Ngãi, ngày: 2025-07-22, loại ghế: Soft bed, số lượng: 1
+[INFO ] 01-07-2025 14:47:15 [main] LogUtils - Chọn depart station: Huế
+[INFO ] 01-07-2025 14:47:15 [main] LogUtils - Đợi arrive station options được cập nhật...
+[INFO ] 01-07-2025 14:47:16 [main] LogUtils - Chọn arrive station: Quảng Ngãi
+[INFO ] 01-07-2025 14:47:16 [main] LogUtils - Chọn depart date: 2025-07-22
+[INFO ] 01-07-2025 14:47:16 [main] LogUtils - Chọn seat type: Soft bed
+[INFO ] 01-07-2025 14:47:16 [main] LogUtils - Chọn ticket amount: 1
+[INFO ] 01-07-2025 14:47:16 [main] LogUtils - Click nút Book Ticket
+[INFO ] 01-07-2025 14:47:17 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 14:47:17 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 14:47:21 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 14:47:21 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 14:47:21 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 14:47:22 [main] LogUtils - Input username
+[INFO ] 01-07-2025 14:47:22 [main] LogUtils - Input password
+[INFO ] 01-07-2025 14:47:22 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 14:47:22 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:42:41 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:42:41 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:42:41 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:42:41 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:42:41 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:42:41 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:42:43 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:42:43 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:42:43 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@7e0b9178
+[INFO ] 01-07-2025 15:42:48 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:42:48 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:42:48 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:42:48 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:42:48 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:42:48 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:42:48 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:42:54 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:42:54 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:42:54 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:42:54 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:42:54 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:42:55 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:42:56 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:42:56 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:42:56 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@4f63e3c7
+[INFO ] 01-07-2025 15:42:57 [main] LogUtils - Click đặt vé
+[INFO ] 01-07-2025 15:42:57 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 15:42:57 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 15:43:53 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:43:54 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:43:54 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:43:54 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:43:54 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:43:54 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:43:54 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:43:56 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:43:56 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@2f4919b0
+[INFO ] 01-07-2025 15:44:01 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:44:01 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:44:01 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:44:01 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:44:01 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:44:01 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:44:03 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:44:03 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:44:03 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@3eed0f5
+[INFO ] 01-07-2025 15:44:04 [main] LogUtils - Click đặt vé
+[INFO ] 01-07-2025 15:44:04 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 15:44:04 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 15:44:09 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:44:10 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:44:10 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:44:10 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:44:10 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:44:10 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:44:11 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:44:12 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:44:12 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@7eb6b6b6
+[INFO ] 01-07-2025 15:44:12 [main] LogUtils - Click đặt vé
+[INFO ] 01-07-2025 15:44:12 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 15:44:12 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 15:54:05 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:54:05 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:54:05 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:54:05 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:54:05 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:54:05 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:54:07 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:54:07 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:54:07 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@2c42b421
+[INFO ] 01-07-2025 15:54:11 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:54:12 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:54:12 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:54:12 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:54:12 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:54:12 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:54:13 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:54:14 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:54:14 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@26dcd8c0
+[INFO ] 01-07-2025 15:54:14 [main] LogUtils - Click đặt vé
+[INFO ] 01-07-2025 15:54:15 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 15:54:15 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 15:54:20 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:54:21 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:54:21 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:54:21 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:54:21 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:54:21 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:54:22 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:54:23 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:54:23 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@20411320
+[INFO ] 01-07-2025 15:54:23 [main] LogUtils - Click đặt vé
+[INFO ] 01-07-2025 15:54:23 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 15:54:23 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 15:56:20 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:56:21 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:56:21 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:56:21 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:56:21 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:56:21 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:56:22 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:56:23 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:56:23 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@3bd55d8
+[INFO ] 01-07-2025 15:56:27 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 15:56:28 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 15:56:28 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 15:56:28 [main] LogUtils - Input username
+[INFO ] 01-07-2025 15:56:28 [main] LogUtils - Input password
+[INFO ] 01-07-2025 15:56:28 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 15:56:29 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 15:56:29 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 15:56:29 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@4fe875be
+[INFO ] 01-07-2025 16:04:12 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 16:04:13 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 16:04:13 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 16:04:13 [main] LogUtils - Input username
+[INFO ] 01-07-2025 16:04:13 [main] LogUtils - Input password
+[INFO ] 01-07-2025 16:04:13 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 16:04:14 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 16:04:15 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 16:04:15 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@4d7e7435
+[INFO ] 01-07-2025 16:04:19 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 16:04:19 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 16:04:19 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 16:04:20 [main] LogUtils - Input username
+[INFO ] 01-07-2025 16:04:20 [main] LogUtils - Input password
+[INFO ] 01-07-2025 16:04:20 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 16:04:21 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 16:04:21 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 16:04:21 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@7ca0863b
+[INFO ] 01-07-2025 16:04:30 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 16:04:30 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 16:04:30 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 16:04:30 [main] LogUtils - Input username
+[INFO ] 01-07-2025 16:04:30 [main] LogUtils - Input password
+[INFO ] 01-07-2025 16:04:30 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 16:04:32 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 16:04:32 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 16:04:32 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@7ee3d262
+[INFO ] 01-07-2025 16:24:36 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 16:24:37 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 16:24:37 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 16:24:37 [main] LogUtils - Input username
+[INFO ] 01-07-2025 16:24:37 [main] LogUtils - Input password
+[INFO ] 01-07-2025 16:24:37 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 16:24:38 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 16:24:39 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 16:24:39 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@1144a55a
+[INFO ] 01-07-2025 16:24:43 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 16:24:44 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 16:24:44 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 16:24:44 [main] LogUtils - Input username
+[INFO ] 01-07-2025 16:24:44 [main] LogUtils - Input password
+[INFO ] 01-07-2025 16:24:44 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 16:24:45 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 16:24:46 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 16:24:46 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@392a04e7
+[INFO ] 01-07-2025 16:24:59 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 16:26:48 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 16:26:49 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 16:26:49 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 16:26:49 [main] LogUtils - Input username
+[INFO ] 01-07-2025 16:26:49 [main] LogUtils - Input password
+[INFO ] 01-07-2025 16:26:49 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 16:26:50 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 16:26:51 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 16:26:51 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@71f96dfb
+[INFO ] 01-07-2025 16:26:55 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 16:26:56 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 16:26:56 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 16:26:56 [main] LogUtils - Input username
+[INFO ] 01-07-2025 16:26:56 [main] LogUtils - Input password
+[INFO ] 01-07-2025 16:26:56 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 16:26:57 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 16:26:57 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 16:26:57 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@4d192aef
+[INFO ] 01-07-2025 17:00:12 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 17:00:12 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 17:00:12 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 17:00:12 [main] LogUtils - Input username
+[INFO ] 01-07-2025 17:00:12 [main] LogUtils - Input password
+[INFO ] 01-07-2025 17:00:12 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 17:00:14 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 17:00:14 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 17:00:14 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@6b9c69a9
+[INFO ] 01-07-2025 17:00:19 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 17:00:20 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 17:00:20 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 17:00:20 [main] LogUtils - Input username
+[INFO ] 01-07-2025 17:00:20 [main] LogUtils - Input password
+[INFO ] 01-07-2025 17:00:20 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 17:00:21 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 17:00:22 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 17:00:22 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@963176
+[INFO ] 01-07-2025 17:00:22 [main] LogUtils - Click đặt vé
+[INFO ] 01-07-2025 17:00:23 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 17:00:23 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 17:00:23 [main] LogUtils - Bước 6: Xác nhận thông báo thành công
+[INFO ] 01-07-2025 17:00:23 [main] LogUtils - Lấy thông báo thành công sau khi đặt vé
+[INFO ] 01-07-2025 17:00:27 [main] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 01-07-2025 17:00:28 [main] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 01-07-2025 17:00:28 [main] LogUtils - Clear form đăng nhập
+[INFO ] 01-07-2025 17:00:28 [main] LogUtils - Input username
+[INFO ] 01-07-2025 17:00:28 [main] LogUtils - Input password
+[INFO ] 01-07-2025 17:00:28 [main] LogUtils - Click login Button
+[INFO ] 01-07-2025 17:00:32 [main] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 01-07-2025 17:00:33 [main] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 01-07-2025 17:00:33 [main] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@3f985a86
+[INFO ] 01-07-2025 17:00:33 [main] LogUtils - Click đặt vé
+[INFO ] 01-07-2025 17:00:34 [main] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 01-07-2025 17:00:34 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 01-07-2025 17:00:34 [main] LogUtils - Bước 6: Xác nhận thông báo thành công
+[INFO ] 01-07-2025 17:00:34 [main] LogUtils - Lấy thông báo thành công sau khi đặt vé
