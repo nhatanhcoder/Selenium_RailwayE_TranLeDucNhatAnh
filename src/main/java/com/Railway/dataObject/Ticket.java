@@ -1,5 +1,4 @@
 package com.Railway.dataObject;
-
 public class Ticket {
     private String departStation;
     private String arriveStation;
@@ -7,9 +6,7 @@ public class Ticket {
     private String seatType;
     private int ticketAmount;
 
-    public Ticket() {
-        // Constructor mặc định để Gson/Jackson sử dụng khi map từ JSON
-    }
+    public Ticket() {}
 
     public Ticket(String departStation, String arriveStation, String departDate, String seatType, int ticketAmount) {
         this.departStation = departStation;
@@ -19,23 +16,13 @@ public class Ticket {
         this.ticketAmount = ticketAmount;
     }
 
-    public String getDepartStation() {
-        return departStation;
-    }
+    public String getDepartStation() { return departStation; }
+    public String getArriveStation() { return arriveStation; }
+    public String getDepartDate() { return departDate; }
+    public String getSeatType() { return seatType; }
+    public String getTicketAmount() { return String.valueOf(ticketAmount); }
 
-    public String getArriveStation() {
-        return arriveStation;
-    }
-
-    public String getDepartDate() {
-        return departDate;
-    }
-
-    public String getSeatType() {
-        return seatType;
-    }
-
-    public String getTicketAmount() {
-        return String.valueOf(ticketAmount);
+    public String toBookingDataString() {
+        return String.join(" | ", departStation, arriveStation, departDate, seatType, String.valueOf(ticketAmount));
     }
 }

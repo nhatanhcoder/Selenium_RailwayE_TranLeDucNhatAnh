@@ -14,6 +14,10 @@ public enum Account {
         this.password = password;
     }
 
+    /**
+     * Returns the username of this account.
+     * @return the username
+     */
     public String getUsername(){
         return username;
     }

@@ -1,21 +1,45 @@
 package com.tests.Common;
 
-import com.Railway.constant.Constants;
-import com.Railway.driver.DriverManager;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
+    import com.Railway.constant.Constants;
+    import com.Railway.driver.DriverManager;
+    import com.Railway.utilities.TestDataLoader;
+    import com.google.gson.JsonArray;
+    import com.google.gson.JsonElement;
 
-public class TestBase {
+    import org.testng.annotations.AfterMethod;
+    import org.testng.annotations.BeforeMethod;
+    import org.testng.annotations.DataProvider;
 
-    @BeforeMethod
-    public  void BeforeTest(){
-        DriverManager.createDriver();
-        DriverManager.getDriver().get(Constants.BASE_URL);
-    };
+    public class TestBase {
 
-    @AfterMethod
-    public  void AfterTest(){
-        DriverManager.quitDriver();
+        @BeforeMethod
+        public  void BeforeTest(){
+            DriverManager.createDriver();
+            DriverManager.getDriver().get(Constants.BASE_URL);
+
+        };
+
+        @AfterMethod
+        public  void AfterTest(){
+            DriverManager.quitDriver();
+        }
+
+        @DataProvider(name = "TestDataProvider")
+        public Object[][] provideTestData(java.lang.reflect.Method method) {
+            String testName = method.getName();  // Lấy tên method test như "testLogin"
+
+            JsonElement element = TestDataLoader.getTestData("TC01"); // Chỉ lấy data TC01
+            if (element.isJsonObject()) {
+                return new Object[][] { { element.getAsJsonObject() } };
+            } else if (element.isJsonArray()) {
+                JsonArray array = element.getAsJsonArray();
+                Object[][] data = new Object[array.size()][1];
+                for (int i = 0; i < array.size(); i++) {
+                    data[i][0] = array.get(i).getAsJsonObject();
+                }
+                return data;
+            } else {
+                throw new IllegalArgumentException("Unsupported data format for test: " + testName);
+            }
+        }
     }
-}
