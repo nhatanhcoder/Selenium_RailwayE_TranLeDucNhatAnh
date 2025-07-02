@@ -177,5 +177,9 @@ public class Constants {
         public static final String LOG_PATH = "Result/logs";
         public static final String REPORT_PATH = "Result/reports";
     }
+    public static class EmailSlurp{
+        public static final String MAIL_NAME ="qzLUhcCXdDm5";
+        public static final String SLURP_DOMAIN ="@mailslurp.biz";
+    }
 
 }
