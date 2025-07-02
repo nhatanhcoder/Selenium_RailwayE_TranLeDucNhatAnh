@@ -987,3 +987,94 @@ Session ID: a68cd03e99debf28f9275ccb0db62a1e
 [INFO ] 01-07-2025 17:00:34 [main] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
 [INFO ] 01-07-2025 17:00:34 [main] LogUtils - Bước 6: Xác nhận thông báo thành công
 [INFO ] 01-07-2025 17:00:34 [main] LogUtils - Lấy thông báo thành công sau khi đặt vé
+[INFO ] 02-07-2025 08:55:07 [main] LogUtils - ===== SUITE STARTED: ParallelTest =====
+[INFO ] 02-07-2025 08:55:15 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testLoginFail
+[INFO ] 02-07-2025 08:55:15 [TestNG-test-ParallelTest-2] LogUtils - Step 1: Go to login page
+[INFO ] 02-07-2025 08:55:16 [TestNG-test-ParallelTest-1] LogUtils - START TEST: testLogin
+[INFO ] 02-07-2025 08:55:16 [TestNG-test-ParallelTest-1] LogUtils - Step 1: Go to login page
+[INFO ] 02-07-2025 08:55:16 [TestNG-test-ParallelTest-3] LogUtils - START TEST: loginFailWithInvalidPassword
+[INFO ] 02-07-2025 08:55:16 [TestNG-test-ParallelTest-3] LogUtils - Step 1: Go to login page
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-2] LogUtils - Step 2: Login with invalid account
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-1] LogUtils - Step 2: Login with valid account
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-1] LogUtils - Clear form đăng nhập
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-3] LogUtils - Step 2: Login with invalid account
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-3] LogUtils - Clear form đăng nhập
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-2] LogUtils - Input username
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-1] LogUtils - Input username
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-3] LogUtils - Input username
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-2] LogUtils - Input password
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-1] LogUtils - Input password
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-2] LogUtils - Click login Button
+[INFO ] 02-07-2025 08:55:17 [TestNG-test-ParallelTest-3] LogUtils - Input password
+[INFO ] 02-07-2025 08:55:18 [TestNG-test-ParallelTest-1] LogUtils - Click login Button
+[INFO ] 02-07-2025 08:55:18 [TestNG-test-ParallelTest-3] LogUtils - Click login Button
+[INFO ] 02-07-2025 08:55:18 [TestNG-test-ParallelTest-2] LogUtils - Step 3: Check error message
+[INFO ] 02-07-2025 08:55:18 [TestNG-test-ParallelTest-2] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 02-07-2025 08:55:18 [TestNG-test-ParallelTest-2] LogUtils - PASSED: testLoginFail
+[INFO ] 02-07-2025 08:55:18 [TestNG-test-ParallelTest-3] LogUtils - Step 3: Check error message
+[INFO ] 02-07-2025 08:55:18 [TestNG-test-ParallelTest-3] LogUtils - Lấy thông báo lỗi đăng nhập
+[ERROR] 02-07-2025 08:55:18 [TestNG-test-ParallelTest-3] LogUtils - FAILED: loginFailWithInvalidPasswordjava.lang.AssertionError: expected [There was a problem with your login and/or errors exist in your form.] but found [Invalid username or password. Please try again.]
+[INFO ] 02-07-2025 08:55:19 [TestNG-test-ParallelTest-1] LogUtils - Step 3: Go to home page
+[INFO ] 02-07-2025 08:55:19 [TestNG-test-ParallelTest-1] LogUtils - Lấy tên trang HomePage
+[INFO ] 02-07-2025 08:55:19 [TestNG-test-ParallelTest-1] LogUtils - Check point: Check welcome message
+[INFO ] 02-07-2025 08:55:19 [TestNG-test-ParallelTest-1] LogUtils - Lấy tiêu đề trang HomePage
+[INFO ] 02-07-2025 08:55:19 [TestNG-test-ParallelTest-1] LogUtils - PASSED: testLogin
+[INFO ] 02-07-2025 08:55:24 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testBookTicket
+[INFO ] 02-07-2025 08:55:24 [TestNG-test-ParallelTest-2] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 02-07-2025 08:55:24 [TestNG-test-ParallelTest-2] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 02-07-2025 08:55:24 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 02-07-2025 08:55:24 [TestNG-test-ParallelTest-2] LogUtils - Input username
+[INFO ] 02-07-2025 08:55:24 [TestNG-test-ParallelTest-2] LogUtils - Input password
+[INFO ] 02-07-2025 08:55:24 [TestNG-test-ParallelTest-2] LogUtils - Click login Button
+[INFO ] 02-07-2025 08:55:25 [TestNG-test-ParallelTest-2] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 02-07-2025 08:55:26 [TestNG-test-ParallelTest-2] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 02-07-2025 08:55:26 [TestNG-test-ParallelTest-2] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@4475b5ba
+[ERROR] 02-07-2025 08:55:26 [TestNG-test-ParallelTest-2] LogUtils - FAILED: testBookTicketorg.openqa.selenium.NoSuchElementException: Cannot locate option with text: 7/06/2025
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: driver.version: unknown
+[INFO ] 02-07-2025 08:55:31 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testBookTicket
+[INFO ] 02-07-2025 08:55:31 [TestNG-test-ParallelTest-2] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 02-07-2025 08:55:31 [TestNG-test-ParallelTest-2] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 02-07-2025 08:55:31 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 02-07-2025 08:55:32 [TestNG-test-ParallelTest-2] LogUtils - Input username
+[INFO ] 02-07-2025 08:55:32 [TestNG-test-ParallelTest-2] LogUtils - Input password
+[INFO ] 02-07-2025 08:55:32 [TestNG-test-ParallelTest-2] LogUtils - Click login Button
+[INFO ] 02-07-2025 08:55:32 [TestNG-test-ParallelTest-2] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 02-07-2025 08:55:33 [TestNG-test-ParallelTest-2] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 02-07-2025 08:55:33 [TestNG-test-ParallelTest-2] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@6129bcbc
+[INFO ] 02-07-2025 08:55:34 [TestNG-test-ParallelTest-2] LogUtils - Click đặt vé
+[INFO ] 02-07-2025 08:55:34 [TestNG-test-ParallelTest-2] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 02-07-2025 08:55:34 [TestNG-test-ParallelTest-2] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 02-07-2025 08:55:35 [TestNG-test-ParallelTest-2] LogUtils - Bước 6: Xác nhận thông báo thành công
+[INFO ] 02-07-2025 08:55:35 [TestNG-test-ParallelTest-2] LogUtils - Lấy thông báo thành công sau khi đặt vé
+[INFO ] 02-07-2025 08:55:35 [TestNG-test-ParallelTest-2] LogUtils - PASSED: testBookTicket
+[INFO ] 02-07-2025 08:55:39 [TestNG-test-ParallelTest-2] LogUtils - START TEST: testBookTicket
+[INFO ] 02-07-2025 08:55:39 [TestNG-test-ParallelTest-2] LogUtils - Bước 1: Truy cập trang đặt vé
+[INFO ] 02-07-2025 08:55:39 [TestNG-test-ParallelTest-2] LogUtils - Bước 2: Đăng nhập bằng tài khoản hợp lệ
+[INFO ] 02-07-2025 08:55:39 [TestNG-test-ParallelTest-2] LogUtils - Clear form đăng nhập
+[INFO ] 02-07-2025 08:55:40 [TestNG-test-ParallelTest-2] LogUtils - Input username
+[INFO ] 02-07-2025 08:55:40 [TestNG-test-ParallelTest-2] LogUtils - Input password
+[INFO ] 02-07-2025 08:55:40 [TestNG-test-ParallelTest-2] LogUtils - Click login Button
+[INFO ] 02-07-2025 08:55:41 [TestNG-test-ParallelTest-2] LogUtils - Bước 3: Chuyển đến trang Đặt vé
+[INFO ] 02-07-2025 08:55:41 [TestNG-test-ParallelTest-2] LogUtils - Bước 4: Nhập thông tin chuyến đi và đặt vé
+[INFO ] 02-07-2025 08:55:41 [TestNG-test-ParallelTest-2] LogUtils - Đặt vé với dữ liệu: com.Railway.dataObject.Ticket@174a0c1f
+[INFO ] 02-07-2025 08:55:42 [TestNG-test-ParallelTest-2] LogUtils - Click đặt vé
+[INFO ] 02-07-2025 08:55:42 [TestNG-test-ParallelTest-2] LogUtils - Bước 5: Xác nhận dữ liệu đặt vé
+[INFO ] 02-07-2025 08:55:42 [TestNG-test-ParallelTest-2] LogUtils - Lấy dữ liệu thành công sau khi đặt vé
+[INFO ] 02-07-2025 08:55:43 [TestNG-test-ParallelTest-2] LogUtils - Bước 6: Xác nhận thông báo thành công
+[INFO ] 02-07-2025 08:55:43 [TestNG-test-ParallelTest-2] LogUtils - Lấy thông báo thành công sau khi đặt vé
+[INFO ] 02-07-2025 08:55:43 [TestNG-test-ParallelTest-2] LogUtils - PASSED: testBookTicket
+[INFO ] 02-07-2025 08:55:43 [main] LogUtils - ===== SUITE FINISHED: ParallelTest =====
+[INFO ] 02-07-2025 09:22:11 [main] LogUtils - Bước 1: Truy cập trang đặt lại mật khẩu
+[INFO ] 02-07-2025 09:22:11 [main] LogUtils - Bước 2: Nhấp vào tab đăng nhập
+[INFO ] 02-07-2025 09:22:12 [main] LogUtils - Bước 3: Nhấp vào liên kết quên mật khẩu
+[INFO ] 02-07-2025 09:22:12 [main] LogUtils - Click Forgot Password link
+[INFO ] 02-07-2025 09:22:12 [main] LogUtils - Bước 4: Nhập email để đặt lại mật khẩu: bachanngulam@grr.la
+[INFO ] 02-07-2025 09:22:12 [main] LogUtils - Nhập email vào Forgot Password: bachanngulam@grr.la
+[INFO ] 02-07-2025 09:22:15 [main] LogUtils - Bước 5: Mở hộp thư và thiết lập email, nhấp vào liên kết trong email
+[INFO ] 02-07-2025 09:22:34 [main] LogUtils - Bước 6: Đặt lại mật khẩu thành công với mật khẩu mới
+[INFO ] 02-07-2025 09:22:34 [main] LogUtils - Đặt lại mật khẩu: mật khẩu mới: bachanngulam, xác nhận: bachanngulam
+[INFO ] 02-07-2025 09:22:34 [main] LogUtils - Click nút Đặt lại mật khẩu

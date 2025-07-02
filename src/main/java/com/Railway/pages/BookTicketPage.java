@@ -29,8 +29,6 @@ public class BookTicketPage extends BasePage {
         return By.xpath(xpath);
     }
 
-    // ===== Public Methods =====
-
     public String getBookSuccessMessageText() {
         LogUtils.info("Lấy thông báo thành công sau khi đặt vé");
         return ElementWrapper.getElementText(bookSuccessMessage);
