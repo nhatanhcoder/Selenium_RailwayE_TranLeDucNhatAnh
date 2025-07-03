@@ -1078,3 +1078,89 @@ Driver info: driver.version: unknown
 [INFO ] 02-07-2025 09:22:34 [main] LogUtils - Bước 6: Đặt lại mật khẩu thành công với mật khẩu mới
 [INFO ] 02-07-2025 09:22:34 [main] LogUtils - Đặt lại mật khẩu: mật khẩu mới: bachanngulam, xác nhận: bachanngulam
 [INFO ] 02-07-2025 09:22:34 [main] LogUtils - Click nút Đặt lại mật khẩu
+[INFO ] 03-07-2025 09:12:40 [main] LogUtils - Bước 1: Truy cập trang bảng giờ tàu
+[INFO ] 03-07-2025 09:12:41 [main] LogUtils - Bước 2: Đăng nhập vào tài khoản
+[INFO ] 03-07-2025 09:12:41 [main] LogUtils - Login với tài khoản hợp lệ
+[INFO ] 03-07-2025 09:12:41 [main] LogUtils - Clear form đăng nhập
+[INFO ] 03-07-2025 09:12:41 [main] LogUtils - Clear form đăng nhập
+[INFO ] 03-07-2025 09:12:41 [main] LogUtils - Input username
+[INFO ] 03-07-2025 09:12:41 [main] LogUtils - Input password
+[INFO ] 03-07-2025 09:12:41 [main] LogUtils - Click login Button
+[INFO ] 03-07-2025 09:12:42 [main] LogUtils - Lấy tên trang Bảng giờ tàu
+[INFO ] 03-07-2025 09:12:42 [main] LogUtils - Bước 3: Lấy dữ liệu tuyến đường từ bảng giờ tàu
+[INFO ] 03-07-2025 09:12:42 [main] LogUtils - Lấy dữ liệu tuyến theo Ticket: Huế -> Sài Gòn, text: book ticket
+[INFO ] 03-07-2025 09:12:42 [main] LogUtils - Tìm link đặt vé theo Ticket: Huế -> Sài Gòn, text: book ticket
+[INFO ] 03-07-2025 09:12:43 [main] LogUtils - Dữ liệu lấy được: Huế - Sài Gòn
+[INFO ] 03-07-2025 09:12:43 [main] LogUtils - Bước 4: Chuyển đến tuyến đường đặt vé
+[INFO ] 03-07-2025 09:12:43 [main] LogUtils - Chuyển đến đặt vé theo Ticket: Huế -> Sài Gòn, text: book ticket
+[INFO ] 03-07-2025 09:12:43 [main] LogUtils - Tìm link đặt vé theo Ticket: Huế -> Sài Gòn, text: book ticket
+[INFO ] 03-07-2025 09:12:44 [main] LogUtils - Bước 5: Lấy dữ liệu trước khi đặt vé
+[INFO ] 03-07-2025 09:12:44 [main] LogUtils - Bước 6: So sánh dữ liệu bảng giờ tàu và dữ liệu đặt vé
+[INFO ] 03-07-2025 09:17:01 [main] LogUtils - Step 1: Go to login page
+[INFO ] 03-07-2025 09:17:01 [main] LogUtils - Step 2: Login with invalid account
+[INFO ] 03-07-2025 09:17:01 [main] LogUtils - Clear form đăng nhập
+[INFO ] 03-07-2025 09:17:02 [main] LogUtils - Input username
+[INFO ] 03-07-2025 09:17:02 [main] LogUtils - Input password
+[INFO ] 03-07-2025 09:17:02 [main] LogUtils - Click login Button
+[INFO ] 03-07-2025 09:17:02 [main] LogUtils - Step 3: Check error message
+[INFO ] 03-07-2025 09:17:02 [main] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 03-07-2025 09:22:08 [main] LogUtils - Step 1: Go to login page
+[INFO ] 03-07-2025 09:22:09 [main] LogUtils - Step 2: Login with invalid account
+[INFO ] 03-07-2025 09:22:09 [main] LogUtils - Clear form đăng nhập
+[INFO ] 03-07-2025 09:22:09 [main] LogUtils - Input username
+[INFO ] 03-07-2025 09:22:09 [main] LogUtils - Input password
+[INFO ] 03-07-2025 09:22:09 [main] LogUtils - Click login Button
+[INFO ] 03-07-2025 09:22:10 [main] LogUtils - Step 3: Check error message
+[INFO ] 03-07-2025 09:22:10 [main] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 03-07-2025 09:49:10 [main] LogUtils - Step 1: Go to Register page
+[INFO ] 03-07-2025 09:49:10 [main] LogUtils - Lấy tên trang Đăng ký
+[INFO ] 03-07-2025 09:49:11 [main] LogUtils - Step 2: Register new account
+[INFO ] 03-07-2025 09:49:11 [main] LogUtils - Đăng ký tài khoản với email: bachanngulam+Jdecgrr.la
+[INFO ] 03-07-2025 09:49:12 [main] LogUtils - Click nút Đăng ký
+[INFO ] 03-07-2025 09:49:14 [main] LogUtils - Step 3: Go to login page
+[INFO ] 03-07-2025 09:49:14 [main] LogUtils - Step 2: Login with unactive account
+[INFO ] 03-07-2025 09:49:14 [main] LogUtils - Clear form đăng nhập
+[INFO ] 03-07-2025 09:49:14 [main] LogUtils - Input username
+[INFO ] 03-07-2025 09:49:14 [main] LogUtils - Input password
+[INFO ] 03-07-2025 09:49:14 [main] LogUtils - Click login Button
+[INFO ] 03-07-2025 09:49:15 [main] LogUtils - Step 3: Check error message for unactive account
+[INFO ] 03-07-2025 09:49:15 [main] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 03-07-2025 09:52:56 [main] LogUtils - Step 1: Go to Register page
+[INFO ] 03-07-2025 09:52:56 [main] LogUtils - Lấy tên trang Đăng ký
+[INFO ] 03-07-2025 09:52:57 [main] LogUtils - Step 2: Register new account
+[INFO ] 03-07-2025 09:52:57 [main] LogUtils - Đăng ký tài khoản với email: vFWxxMNDar8p+7Mcm@mailslurp.biz
+[INFO ] 03-07-2025 09:52:58 [main] LogUtils - Click nút Đăng ký
+[INFO ] 03-07-2025 09:53:00 [main] LogUtils - Step 3: Go to login page
+[INFO ] 03-07-2025 09:53:00 [main] LogUtils - Step 2: Login with unactive account
+[INFO ] 03-07-2025 09:53:00 [main] LogUtils - Clear form đăng nhập
+[INFO ] 03-07-2025 09:53:00 [main] LogUtils - Input username
+[INFO ] 03-07-2025 09:53:01 [main] LogUtils - Input password
+[INFO ] 03-07-2025 09:53:01 [main] LogUtils - Click login Button
+[INFO ] 03-07-2025 09:53:01 [main] LogUtils - Step 3: Check error message for unactive account
+[INFO ] 03-07-2025 09:53:01 [main] LogUtils - Lấy thông báo lỗi đăng nhập
+[INFO ] 03-07-2025 10:14:18 [main] LogUtils - Bước 1: Truy cập trang đăng ký với PID và mật khẩu để trống
+[INFO ] 03-07-2025 10:14:18 [main] LogUtils - Lấy tên trang Đăng ký
+[INFO ] 03-07-2025 10:14:19 [main] LogUtils - Bước 2: Nhập địa chỉ email hợp lệ: vFWxxMNDar8p+wrEu@mailslurp.biz
+[INFO ] 03-07-2025 10:14:19 [main] LogUtils - Bước 3: Để trống mật khẩu và xác nhận mật khẩu
+[INFO ] 03-07-2025 10:14:19 [main] LogUtils - Bước 4: Nhập PID để trống
+[INFO ] 03-07-2025 10:14:19 [main] LogUtils - Bước 5: Nhấn nút đăng ký
+[INFO ] 03-07-2025 10:14:19 [main] LogUtils - Đăng ký với email: vFWxxMNDar8p+wrEu@mailslurp.biz | Password:  | Confirm:  | PID: 
+[INFO ] 03-07-2025 10:14:20 [main] LogUtils - Bước 6: Xác nhận thông báo lỗi đăng ký hiển thị đúng
+[INFO ] 03-07-2025 10:14:20 [main] LogUtils - Lấy thông báo lỗi đăng ký
+[INFO ] 03-07-2025 10:14:20 [main] LogUtils - Bước 7: Xác nhận thông báo lỗi định dạng mật khẩu hiển thị đúng
+[INFO ] 03-07-2025 10:14:20 [main] LogUtils - Lấy thông báo lỗi của trường: password
+[INFO ] 03-07-2025 10:14:20 [main] LogUtils - Bước 8: Xác nhận thông báo lỗi định dạng PID hiển thị đúng
+[INFO ] 03-07-2025 10:14:20 [main] LogUtils - Lấy thông báo lỗi của trường: pid
+[INFO ] 03-07-2025 10:15:10 [main] LogUtils - Bước 1: Truy cập trang đăng ký với PID và mật khẩu để trống
+[INFO ] 03-07-2025 10:15:10 [main] LogUtils - Lấy tên trang Đăng ký
+[INFO ] 03-07-2025 10:15:11 [main] LogUtils - Bước 2: Nhập địa chỉ email hợp lệ: vFWxxMNDar8p+WAwX@mailslurp.biz
+[INFO ] 03-07-2025 10:15:11 [main] LogUtils - Bước 3: Để trống mật khẩu và xác nhận mật khẩu
+[INFO ] 03-07-2025 10:15:11 [main] LogUtils - Bước 4: Nhập PID để trống
+[INFO ] 03-07-2025 10:15:11 [main] LogUtils - Bước 5: Nhấn nút đăng ký
+[INFO ] 03-07-2025 10:15:11 [main] LogUtils - Đăng ký với email: vFWxxMNDar8p+WAwX@mailslurp.biz | Password:  | Confirm:  | PID: 
+[INFO ] 03-07-2025 10:15:12 [main] LogUtils - Bước 6: Xác nhận thông báo lỗi đăng ký hiển thị đúng
+[INFO ] 03-07-2025 10:15:12 [main] LogUtils - Lấy thông báo lỗi đăng ký
+[INFO ] 03-07-2025 10:15:12 [main] LogUtils - Bước 7: Xác nhận thông báo lỗi định dạng mật khẩu hiển thị đúng
+[INFO ] 03-07-2025 10:15:12 [main] LogUtils - Lấy thông báo lỗi của trường: password
+[INFO ] 03-07-2025 10:15:12 [main] LogUtils - Bước 8: Xác nhận thông báo lỗi định dạng PID hiển thị đúng
+[INFO ] 03-07-2025 10:15:12 [main] LogUtils - Lấy thông báo lỗi của trường: pid

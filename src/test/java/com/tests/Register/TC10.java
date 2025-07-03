@@ -27,10 +27,10 @@ public class TC10 extends TestBase {
         LogUtils.info("Bước 4: Nhập lại mật khẩu không khớp");
         LogUtils.info("Bước 5: Nhập PID hợp lệ");
         LogUtils.info("Bước 6: Gửi biểu mẫu đăng ký");
-        registerPage.register(validEmail, validPassword, unmatchConfirmPassword, validPID);
+        registerPage.registerSuccessFully(validEmail, validPassword);
 
         LogUtils.info("Bước 7: Xác nhận thông báo lỗi mật khẩu không khớp");
-        org.testng.Assert.assertEquals(registerPage.getValidationConfirmPasswordMessageText(), expectedConfirmPasswordValidationMessage);
+        org.testng.Assert.assertEquals(registerPage.getValidationMessageText(Constants.validationLocator.CONFIRM_PASSWORD), expectedConfirmPasswordValidationMessage);
 
     }
 }

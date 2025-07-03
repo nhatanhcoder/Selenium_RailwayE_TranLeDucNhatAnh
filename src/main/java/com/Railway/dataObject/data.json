@@ -9,7 +9,8 @@
   },
   "TC03": {
     "username": "nhatanhkof@gmail.com",
-    "password": "abc123"
+    "password": "abc123",
+    "expectedLoginFailMessage": "Invalid username or password. Please try again."
   },
   "TC05": {
     "username": "nhatanhkof@gmail.com",
@@ -60,7 +61,7 @@
     {
       "departStation": "Sài Gòn",
       "arriveStation": "Phan Thiết",
-      "days": 4,
+      "days": 5,
       "seatType": "Soft bed with air conditioner",
       "amount": 1
     },
@@ -89,7 +90,7 @@
       "arriveStation": "Huế",
       "days": 4,
       "seatType": "Soft bed with air conditioner",
-      "amount": 2
+      "amount": 1
     },
     {
       "departStation": "Quảng Ngãi",

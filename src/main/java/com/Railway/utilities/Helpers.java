@@ -2,13 +2,9 @@ package com.Railway.utilities;
 
 import com.Railway.constant.Constants;
 import com.Railway.driver.DriverManager;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -30,7 +26,7 @@ public class Helpers {
         }
         return null; // Không tìm thấy
     }
-    public static String EmailForRegister() {
+    public static String CeateEmailForRegister() {
         // Tạo chuỗi ngẫu nhiên 4 ký tự
         String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         StringBuilder randomStr = new StringBuilder();
@@ -39,10 +35,9 @@ public class Helpers {
         for (int i = 0; i < 4; i++) {
             randomStr.append(chars.charAt(random.nextInt(chars.length())));
         }
-
         // Tạo email dạng: tên+random4kýtự@domain
         String subStringMail = "+" + randomStr;
-        String Mail = Constants.accountData.MAIL_SERVICE_NAME + subStringMail + Constants.accountData.MAIL_SERVICE_DOMAIN;
+        String Mail = Constants.EmailSlurp.MAIL_NAME + subStringMail + Constants.EmailSlurp.SLURP_DOMAIN;
 
         return Mail;
     }

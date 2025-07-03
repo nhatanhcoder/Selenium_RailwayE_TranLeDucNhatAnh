@@ -24,7 +24,7 @@ public class TC07 extends TestBase {
         String expectedRegisterSuccessMessage = Constants.message.REGISTER_SUCCESS_MESSAGE;
 
         LogUtils.info("Bước 2: Nhập thông tin đăng ký");
-        registerPage.register(validEmail, validPassword, validConfirmPassword, validPID);
+        registerPage.registerSuccessFully(validEmail, validPassword);
 
         LogUtils.info("Bước 3: Xác nhận đăng ký thành công");
         org.testng.Assert.assertEquals(registerPage.getRegisterSuccessFullyMessageText(), expectedRegisterSuccessMessage);

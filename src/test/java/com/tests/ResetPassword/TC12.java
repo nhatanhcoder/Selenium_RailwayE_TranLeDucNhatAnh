@@ -1,11 +1,10 @@
 package com.tests.ResetPassword;
 
 import com.Railway.constant.Constants;
-import com.Railway.pages.BasePage;
-import com.Railway.pages.HomePage;
 import com.Railway.pages.LoginPage;
 import com.Railway.pages.ResetPasswordPage;
 import com.Railway.thirdPartyPage.guerrillamailPage;
+import com.Railway.utilities.Helpers;
 import com.tests.Common.TestBase;
 import com.Railway.utilities.LogUtils;
 import org.testng.Assert;
@@ -25,7 +24,8 @@ public class TC12 extends TestBase {
         LogUtils.info("Bước 3: Nhấp vào liên kết quên mật khẩu");
         loginPage.clickOnForgotPasswordLink();
 
-        String Email= Constants.accountData.MAIL_SERVICE_NAME+"@"+Constants.accountData.MAIL_SERVICE_DOMAIN;
+        String Email= Helpers.CeateEmailForRegister();
+
         LogUtils.info("Bước 4: Nhập email để đặt lại mật khẩu: " + Email);
         loginPage.enterForgotPasswordEmail(Email);
 

@@ -50,5 +50,15 @@ public class MailHelper {
         String emailBody = getEmailBodyByID("Please reset your password "+ "qzLUhcCXdDm5+13a@mailslurp.biz");
         System.out.println(Helpers.extractLinkFromEmailBody(emailBody));
     }
+    public static void goToRessetPassword(){
+        String EmailBody = getEmailBodyByID("Please reset your password "+ Helpers.CeateEmailForRegister());
+        String emailLink = Helpers.extractLinkFromEmailBody(EmailBody);
+        get(emailLink);
+    }
+    public static void goToActiveAccount(){
+                String EmailBody = getEmailBodyByID("Please confirm your account "+ Helpers.CeateEmailForRegister());
+        String emailLink = Helpers.extractLinkFromEmailBody(EmailBody);
+        get(emailLink);
+    }
 
 }

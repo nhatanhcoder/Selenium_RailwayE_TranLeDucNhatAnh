@@ -10,17 +10,19 @@ Framework tự động hóa kiểm thử cho hệ thống đặt vé tàu hỏa 
 
 ## 🛠️ Công nghệ sử dụng
 
-| Công nghệ              | Phiên bản | Mục đích                                |
-| ---------------------- | --------- | --------------------------------------- |
-| **Java**               | 11+       | Ngôn ngữ lập trình chính                |
-| **Selenium WebDriver** | 4.27.0    | Tự động hóa trình duyệt web             |
-| **TestNG**             | 7.10.0    | Framework testing và quản lý test suite |
-| **ExtentReports**      | 5.1.2     | Tạo báo cáo HTML đẹp mắt                |
-| **Log4j**              | 2.20.0    | Ghi log hệ thống                        |
-| **Gson**               | 2.10.1    | Xử lý dữ liệu JSON                      |
-| **Commons-IO**         | 2.11.0    | Thao tác file (screenshot)              |
+| Công nghệ               | Phiên bản | Mục đích                                  |
+|-------------------------|-----------|-------------------------------------------|
+| **Java**                | 11+       | Ngôn ngữ lập trình chính                  |
+| **Selenium WebDriver**  | 4.27.0    | Tự động hóa trình duyệt web               |
+| **TestNG**              | 7.10.0    | Framework testing và quản lý test suite   |
+| **ExtentReports**       | 5.1.2     | Tạo báo cáo HTML đẹp mắt                  |
+| **Log4j**               | 2.20.0    | Ghi log hệ thống                          |
+| **Gson**                | 2.10.1    | Xử lý dữ liệu JSON                        |
+| **Commons-IO**          | 2.11.0    | Thao tác file (screenshot)                |
+| **Rest Assured**        | 5.4.0     | Kiểm thử API                              |
+| **MailSlurp**           | 15.18.2   | Lấy data từ mail và tạo mail mới          |
+|-------------------------|-----------| ----------------------------------------- |
 
----
 
 ## 📂 Cấu trúc dự án
 
@@ -140,6 +142,8 @@ mvn test -Dgroups=login
 * ⏳ Smart wait: Dynamic wait, retry mechanism
 * 📁 POM: Mỗi page extend `BasePage`
 * 📂 Logging: Log4j2, INFO/WARN/ERROR
+* 💡 API test: Tích hợp Rest Assured để test API REST 
+* 📧 Email Testing: Sử dụng MailSlurp data từ mail và tạo mail mới
 
 ---
 

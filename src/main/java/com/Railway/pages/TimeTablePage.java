@@ -1,6 +1,7 @@
 package com.Railway.pages;
 
 import com.Railway.constant.Constants;
+import com.Railway.dataObject.Ticket;
 import com.Railway.driver.DriverManager;
 import com.Railway.utilities.Helpers;
 import com.Railway.utilities.LogUtils;
@@ -21,32 +22,40 @@ public class TimeTablePage extends BasePage {
         return Constants.pageName.TIMETABLE_PAGE;
     }
 
-
-    private static WebElement getBookingLinkWithRoute(String departStation,String arriveStation, String linkText) {
-        String xpath = String.format("//tr[td[2][normalize-space()='%s'] and td[3][normalize-space()='%s']]//a[contains(text(), '%s')]",
-                departStation,
-                arriveStation,
-                linkText);
-        LogUtils.info(String.format("Tìm link đặt vé với tuyến: %s -> %s, text: %s", departStation, arriveStation, linkText));
+    private static WebElement getBookingLinkWithTicket(Ticket ticket, String linkText) {
+        String xpath = String.format(
+                "//tr[td[2][normalize-space()='%s'] and td[3][normalize-space()='%s']]//a[contains(text(), '%s')]",
+                ticket.getDepartStation(),
+                ticket.getArriveStation(),
+                linkText
+        );
+        LogUtils.info(String.format("Tìm link đặt vé theo Ticket: %s -> %s, text: %s",
+                ticket.getDepartStation(), ticket.getArriveStation(), linkText));
         return DriverManager.getDriver().findElement(By.xpath(xpath));
     }
 
-    public void gotoBookingRoute(String departStation,String arriveStation, String linkText) {
-        LogUtils.info(String.format("Chuyển đến đặt vé tuyến: %s -> %s, text: %s", departStation, arriveStation, linkText));
-        Helpers.scrollToElement(getBookingLinkWithRoute(departStation,arriveStation,linkText));
-        getBookingLinkWithRoute(departStation,arriveStation,linkText).click();
+    public void gotoBookingWithTicket(Ticket ticket, String linkText) {
+        LogUtils.info(String.format("Chuyển đến đặt vé theo Ticket: %s -> %s, text: %s",
+                ticket.getDepartStation(), ticket.getArriveStation(), linkText));
+        WebElement bookingLink = getBookingLinkWithTicket(ticket, linkText);
+        Helpers.scrollToElement(bookingLink);
+        bookingLink.click();
     }
 
-    public String getBookingRouteData(String departStation,String arriveStation,String linkText) {
-        LogUtils.info(String.format("Lấy dữ liệu tuyến: %s -> %s, text: %s", departStation, arriveStation, linkText));
-        Helpers.scrollToElement(getBookingLinkWithRoute(departStation,arriveStation,linkText));
-        String xpath = String.format("//tr[td[2][normalize-space()='%s'] and td[3][normalize-space()='%s']]", departStation, arriveStation);
+    public String getBookingRouteData(Ticket ticket, String linkText) {
+        LogUtils.info(String.format("Lấy dữ liệu tuyến theo Ticket: %s -> %s, text: %s",
+                ticket.getDepartStation(), ticket.getArriveStation(), linkText));
+        WebElement bookingLink = getBookingLinkWithTicket(ticket, linkText);
+        Helpers.scrollToElement(bookingLink);
+
+        String xpath = String.format("//tr[td[2][normalize-space()='%s'] and td[3][normalize-space()='%s']]",
+                ticket.getDepartStation(), ticket.getArriveStation());
         WebElement row = DriverManager.getDriver().findElement(By.xpath(xpath));
 
         String depart = row.findElement(By.xpath("td[2]")).getText();
         String arrive = row.findElement(By.xpath("td[3]")).getText();
+
         LogUtils.info(String.format("Dữ liệu lấy được: %s - %s", depart, arrive));
         return depart + arrive;
     }
-
 }

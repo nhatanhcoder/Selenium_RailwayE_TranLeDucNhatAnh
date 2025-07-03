@@ -87,13 +87,20 @@ public class Constants {
     public static class validationMessage{
         public static final String  INVALID_EMAIL_FORMAT= "Invalid email address";
         public static final String  INVALID_PASSWORD_FORMAT= "Invalid password length";
-        public static final String  INVALID_PID_FORMAT= "Invalid PID";
+        public static final String  INVALID_PID_FORMAT= "Invalid ID length";
         public static final String  PASSWORD_NOT_MATCH= "The two passwords do not match";
 
         public static final String  RESET_NEW_PASS_BLANK= "Please enter a new password.";
         public static final String  RESET_CONFIRM_NOTMATCH= "The password confirmation did not match the new password.";
         public static final String  RESET_TOKEN_INVALID= "The password reset token is invalid.";
 
+    }
+    public static class validationLocator{
+        //register page
+        public static final String EMAIL = "email";
+        public static final String PASSWORD = "password";
+        public static final String CONFIRM_PASSWORD = "confirmPassword";
+        public static final String PID = "pid";
     }
 
     public static class errorMessage{
@@ -156,20 +163,7 @@ public class Constants {
             public static final String SEAT_TYPE = "Soft seat with air conditioner";
             public static final String TICKET_AMOUNT = "1";
         }
-        public static class ticketData16{
-            public static final String DEPART_STATION = "Đà Nẵng";
-            public static final String ARRIVE_STATION = "Sài Gòn";
-            public static final String DEPART_DATE = "7/2/2025";
-            public static final String SEAT_TYPE = "Soft bed";
-            public static final String TICKET_AMOUNT = "1";
-        }
-        public static class ticketDataTC15{
-            public static final String DEPART_STATION = "Huế";
-            public static final String ARRIVE_STATION = "Sài Gòn";
-            public static final String DEPART_DATE = "7/19/2025";
-            public static final String SEAT_TYPE = "Soft seat with air conditioner";
-            public static final String TICKET_AMOUNT = "1";
-        }
+
     }
 
     public static class screenshot{
@@ -178,7 +172,7 @@ public class Constants {
         public static final String REPORT_PATH = "Result/reports";
     }
     public static class EmailSlurp{
-        public static final String MAIL_NAME ="qzLUhcCXdDm5";
+        public static final String MAIL_NAME ="vFWxxMNDar8p";
         public static final String SLURP_DOMAIN ="@mailslurp.biz";
     }
 

@@ -6,8 +6,6 @@ import com.Railway.dataObject.Ticket;
 import com.Railway.driver.DriverManager;
 import com.Railway.utilities.LogUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 public class BookTicketPage extends BasePage {
@@ -34,6 +32,11 @@ public class BookTicketPage extends BasePage {
         return ElementWrapper.getElementText(bookSuccessMessage);
     }
 
+        public String getPreBookingData(Ticket ticket) {
+            String data = ticket.getDepartStation() + ticket.getArriveStation();
+            return data;
+        }
+
     public String getBookSuccessData() {
         LogUtils.info("Lấy dữ liệu thành công sau khi đặt vé");
 
@@ -49,11 +52,6 @@ public class BookTicketPage extends BasePage {
                 departDateData,
                 seatTypeData,
                 ticketAmountData);
-    }
-    public static String getElementIdBySelector(String cssSelector) {
-        WebDriver driver = DriverManager.getDriver();
-        WebElement element = driver.findElement(By.cssSelector(cssSelector));
-        return element.getAttribute("id");
     }
 
 
@@ -83,8 +81,6 @@ public class BookTicketPage extends BasePage {
         LogUtils.info("Click đặt vé");
         ElementWrapper.clickElement(bookTicketButton);
     }
-
-
 
     @Override
     protected String getPageName() {

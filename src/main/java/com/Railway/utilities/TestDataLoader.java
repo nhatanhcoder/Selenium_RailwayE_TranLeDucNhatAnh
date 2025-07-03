@@ -1,5 +1,6 @@
 package com.Railway.utilities;
 
+import com.Railway.constant.Constants;
 import com.google.gson.*;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -10,7 +11,7 @@ public class TestDataLoader {
 
     static {
         try {
-            Reader reader = new FileReader("src/main/java/com/Railway/dataObject/data.json"); // Đường dẫn đến file của bạn
+            Reader reader = new FileReader(Constants.DATA_FILE_PATH); // Đường dẫn đến file của bạn
             testData = JsonParser.parseReader(reader).getAsJsonObject();
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Không tìm thấy file test data!", e);

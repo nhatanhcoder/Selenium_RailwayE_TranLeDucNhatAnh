@@ -4,15 +4,17 @@ import com.Railway.constant.Constants;
 import com.Railway.dataObject.Enum.AccountEnum;
 import com.Railway.pages.LoginPage;
 import com.Railway.utilities.LogUtils;
+import com.google.gson.JsonObject;
 import com.tests.Common.TestBase;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TC02 extends TestBase {
 
-    @Test
-    public void testLoginFail() {
+    @Test(dataProvider="TestDataProvider")
+    public void testLoginFail(JsonObject testData) {
         LoginPage loginPage = new LoginPage();
         LogUtils logUtils = new LogUtils();
 
@@ -23,7 +25,7 @@ public class TC02 extends TestBase {
 
         //Step2
         logUtils.info("Step 2: Login with invalid account");
-        loginPage.login(AccountEnum.NULL_USERNAME_ACCOUNT);
+        loginPage.loginSuccess();
 
         //Step2
         logUtils.info("Step 3: Check error message");

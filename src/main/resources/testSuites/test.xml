@@ -11,7 +11,7 @@
             <class name="com.tests.Login.TC02"></class>
             <class name="com.tests.Login.TC03"></class>
             <class name="com.tests.BookTicket.TC14"></class>
-            <!-- <class name="com.tests.Login.TC05"></class>
+            <class name="com.tests.Login.TC05"></class>
             <class name="com.tests.Login.TC06"></class>
             <class name="com.tests.Login.TC08"></class>
             <class name="com.tests.BookTicket.TC04"></class>
@@ -19,8 +19,7 @@
             <class name="com.tests.Register.TC07"></class>
             <class name="com.tests.Register.TC10"></class>
             <class name="com.tests.Register.TC11"></class>
-            <class name="com.tests..TC14"></class>
-            <class name="com.tests.Login.TC15"></class> -->
+            <class name="com.tests.Login.TC"></class>
         </classes>
     </test>
 </suite>
